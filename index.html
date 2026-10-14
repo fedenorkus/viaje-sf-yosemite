@@ -43,8 +43,10 @@
   .spot .spottext{font-size:13px;line-height:1.4;color:var(--text);padding:6px 0 2px 26px}
   .added{background:#ecfdf3;border:1px solid #bbf7d0;border-radius:12px;padding:10px;margin:10px 0;font-size:13px;line-height:1.4}
   .added b{color:#166534}
-  .parking{display:inline-block;margin-top:8px;text-decoration:none;background:#111827;color:white;padding:8px 10px;border-radius:9px;font-size:13px;font-weight:750}
+  .parking{display:inline-flex;align-items:center;justify-content:center;margin-top:8px;text-decoration:none;background:#111827;color:white;width:34px;height:34px;border-radius:9px;font-size:18px;font-weight:800}
   .gps{font-size:11px;color:var(--muted);margin-top:4px}
+  .map{display:inline-flex;align-items:center;justify-content:center;margin-top:10px;text-decoration:none;background:#fff;color:var(--text);width:36px;height:36px;border:1px solid var(--line);border-radius:10px;font-size:20px;font-weight:700;padding:0}
+  .gmaps-icon{width:22px;height:22px;display:block}
   @media (max-width:480px){
     .wrap{padding:8px 10px 28px}
     .time{min-width:68px;font-size:14px}
@@ -73,7 +75,7 @@
     <div class="activity"><input class="check" type="checkbox">Hotel → Pier 33</div>
     <div class="meta">Uber/Waymo. Llegar 08:40–08:45. Boarding 09:05.</div>
     <details class="spot"><summary>Qué hacer / cuánto tiempo</summary><div class="spottext"><b>Objetivo:</b> llegar con margen, ubicar la fila de embarque y usar baños antes de subir. <b>Tiempo:</b> 20–25 min de margen en Pier 33 antes del boarding.</div></details>
-    <a class="map" href="https://www.google.com/maps/dir/?api=1&origin=Holiday+Inn+San+Francisco+Golden+Gateway,+1500+Van+Ness+Ave,+San+Francisco,+CA&destination=Pier+33,+San+Francisco,+CA&travelmode=driving" target="_blank">Abrir mapa</a>
+    <a class="map" href="https://www.google.com/maps/dir/?api=1&origin=Holiday+Inn+San+Francisco+Golden+Gateway,+1500+Van+Ness+Ave,+San+Francisco,+CA&destination=Pier+33,+San+Francisco,+CA&travelmode=driving" target="_blank" aria-label="Abrir en Google Maps" title="Abrir en Google Maps"><svg class="gmaps-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7z"/><circle cx="12" cy="9" r="2.7" fill="#fff"/></svg></a>
   </div></div></div>
 
   <div class="card"><div class="row"><div class="time">09:40</div><div class="content">
@@ -87,7 +89,7 @@
     <div class="activity"><input class="check" type="checkbox">Scoma’s Fisherman’s Wharf</div>
     <div class="meta">Reserva para 2. Desde Pier 33, 15–20 min caminando.</div>
     <details class="spot"><summary>Qué hacer / cuánto tiempo</summary><div class="spottext"><b>Idea:</b> almuerzo tranquilo junto al agua; aprovechar las vistas del puerto y Fisherman’s Wharf sin desviarse demasiado. <b>Tiempo:</b> 60–75 min.</div></details>
-    <a class="map" href="https://www.google.com/maps/dir/?api=1&origin=Pier+33,+San+Francisco,+CA&destination=Scoma%27s+Restaurant,+1965+Al+Scoma+Way,+San+Francisco,+CA&travelmode=walking" target="_blank">Abrir mapa</a>
+    <a class="map" href="https://www.google.com/maps/dir/?api=1&origin=Pier+33,+San+Francisco,+CA&destination=Scoma%27s+Restaurant,+1965+Al+Scoma+Way,+San+Francisco,+CA&travelmode=walking" target="_blank" aria-label="Abrir en Google Maps" title="Abrir en Google Maps"><svg class="gmaps-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7z"/><circle cx="12" cy="9" r="2.7" fill="#fff"/></svg></a>
   </div></div></div>
 
   <div class="card"><div class="row"><div class="time">13:30</div><div class="content">
@@ -120,7 +122,7 @@
       <div class="spottext"><b>Qué mirar:</b> el puente desde el Welcome Center y Battery East. Si tienen tiempo, avancen un tramo caminando o en bici sobre el puente para sentir la escala, pero no hace falta cruzarlo completo.</div>
     </details>
 
-    <a class="map" href="https://www.google.com/maps/dir/?api=1&origin=Fisherman%27s+Wharf,+San+Francisco,+CA&destination=Golden+Gate+Bridge+Welcome+Center,+San+Francisco,+CA&waypoints=Marina+Green,+San+Francisco,+CA%7CPalace+of+Fine+Arts,+San+Francisco,+CA%7CCrissy+Field,+San+Francisco,+CA%7CPresidio+Tunnel+Tops,+San+Francisco,+CA&travelmode=bicycling" target="_blank">Abrir mapa</a>
+    <a class="map" href="https://www.google.com/maps/dir/?api=1&origin=Fisherman%27s+Wharf,+San+Francisco,+CA&destination=Golden+Gate+Bridge+Welcome+Center,+San+Francisco,+CA&waypoints=Marina+Green,+San+Francisco,+CA%7CPalace+of+Fine+Arts,+San+Francisco,+CA%7CCrissy+Field,+San+Francisco,+CA%7CPresidio+Tunnel+Tops,+San+Francisco,+CA&travelmode=bicycling" target="_blank" aria-label="Abrir en Google Maps" title="Abrir en Google Maps"><svg class="gmaps-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7z"/><circle cx="12" cy="9" r="2.7" fill="#fff"/></svg></a>
   </div></div></div>
 
   <div class="card"><div class="row"><div class="time">16:30</div><div class="content">
@@ -130,7 +132,7 @@
     <details class="spot"><summary>Sutro Baths</summary><div class="spottext"><b>Qué ver:</b> ruinas de los antiguos baños, costa rocosa y Cave/Cliff House area. <b>Tiempo:</b> 20–30 min.</div></details>
     <details class="spot"><summary>Ocean Beach</summary><div class="spottext"><b>Qué ver:</b> playa abierta sobre el Pacífico, ideal para cerrar el paseo y ver la luz de la tarde. <b>Tiempo:</b> 20–30 min.</div></details>
     <span class="badge walk">Caminata</span>
-    <a class="map" href="https://www.google.com/maps/dir/?api=1&origin=Lands+End+Lookout,+San+Francisco,+CA&destination=Ocean+Beach,+San+Francisco,+CA&waypoints=Sutro+Baths,+San+Francisco,+CA&travelmode=walking" target="_blank">Abrir mapa</a>
+    <a class="map" href="https://www.google.com/maps/dir/?api=1&origin=Lands+End+Lookout,+San+Francisco,+CA&destination=Ocean+Beach,+San+Francisco,+CA&waypoints=Sutro+Baths,+San+Francisco,+CA&travelmode=walking" target="_blank" aria-label="Abrir en Google Maps" title="Abrir en Google Maps"><svg class="gmaps-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7z"/><circle cx="12" cy="9" r="2.7" fill="#fff"/></svg></a>
   </div></div></div>
 
   <div class="card"><div class="row"><div class="time">20:30</div><div class="content">
@@ -157,7 +159,7 @@
     <details class="spot"><summary>Chinatown</summary><div class="spottext"><b>Qué ver:</b> Dragon Gate, Grant Ave y alguna calle lateral con mercados y tiendas. <b>Tiempo:</b> 45–60 min.</div></details>
     <details class="spot"><summary>Union Square</summary><div class="spottext"><b>Qué ver:</b> plaza, entorno comercial y centro clásico de SF. <b>Tiempo:</b> 20–30 min.</div></details>
     <span class="badge walk">Caminando</span>
-    <a class="map" href="https://www.google.com/maps/dir/?api=1&origin=Holiday+Inn+San+Francisco+Golden+Gateway,+1500+Van+Ness+Ave,+San+Francisco,+CA&destination=233+Ellis+St,+San+Francisco,+CA&waypoints=Lombard+Street,+San+Francisco,+CA%7CNorth+Beach,+San+Francisco,+CA%7CChinatown,+San+Francisco,+CA%7CUnion+Square,+San+Francisco,+CA&travelmode=walking" target="_blank">Abrir mapa</a>
+    <a class="map" href="https://www.google.com/maps/dir/?api=1&origin=Holiday+Inn+San+Francisco+Golden+Gateway,+1500+Van+Ness+Ave,+San+Francisco,+CA&destination=233+Ellis+St,+San+Francisco,+CA&waypoints=Lombard+Street,+San+Francisco,+CA%7CNorth+Beach,+San+Francisco,+CA%7CChinatown,+San+Francisco,+CA%7CUnion+Square,+San+Francisco,+CA&travelmode=walking" target="_blank" aria-label="Abrir en Google Maps" title="Abrir en Google Maps"><svg class="gmaps-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7z"/><circle cx="12" cy="9" r="2.7" fill="#fff"/></svg></a>
   </div></div></div>
 
   <div class="card"><div class="row"><div class="time">17:00</div><div class="content">
@@ -171,7 +173,7 @@
     <div class="activity"><input class="check" type="checkbox">Enterprise → Holiday Inn → cargar valijas → Yosemite</div>
     <div class="meta">Salida directa hacia Yosemite Westgate Lodge.</div>
     <details class="spot"><summary>Qué tener en cuenta / cuánto tiempo</summary><div class="spottext"><b>Clave:</b> recoger valijas y salir sin paradas largas. El trayecto a Westgate es de varias horas y conviene cenar antes o llevar algo para el camino. <b>Tiempo:</b> llegada estimada cerca de las 21:00, según tráfico.</div></details>
-    <a class="map" href="https://www.google.com/maps/dir/?api=1&origin=233+Ellis+St,+San+Francisco,+CA&destination=Yosemite+Westgate+Lodge,+7633+Highway+120,+Groveland,+CA&waypoints=Holiday+Inn+San+Francisco+Golden+Gateway,+1500+Van+Ness+Ave,+San+Francisco,+CA&travelmode=driving" target="_blank">Abrir mapa</a>
+    <a class="map" href="https://www.google.com/maps/dir/?api=1&origin=233+Ellis+St,+San+Francisco,+CA&destination=Yosemite+Westgate+Lodge,+7633+Highway+120,+Groveland,+CA&waypoints=Holiday+Inn+San+Francisco+Golden+Gateway,+1500+Van+Ness+Ave,+San+Francisco,+CA&travelmode=driving" target="_blank" aria-label="Abrir en Google Maps" title="Abrir en Google Maps"><svg class="gmaps-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7z"/><circle cx="12" cy="9" r="2.7" fill="#fff"/></svg></a>
   </div></div></div>
 </section>
 
@@ -191,7 +193,7 @@
       <div class="activity"><input class="check" type="checkbox">Tuolumne Grove</div>
       <div class="meta">1h30–1h45 · ~4 km · bosque de sequoias · subida al regreso.</div>
       <details class="spot"><summary>Qué hacemos / cuánto tiempo</summary><div class="spottext"><b>Qué hacemos:</b> estacionamos en Tuolumne Grove Trailhead, bajamos por el Old Big Oak Flat Road hasta el sector de giant sequoias, caminamos entre los árboles principales y regresamos por la misma ruta. La ida es mayormente en bajada; guardar energía porque el regreso tiene unos 150 m de subida. <b>Tiempo:</b> 1h30–1h45 · ~4 km ida/vuelta.</div></details>
-      <a class="parking" href="https://www.google.com/maps/dir/?api=1&destination=37.758253,-119.805599&travelmode=driving" target="_blank">🅿️ Parking</a><div class="gps">Tuolumne Grove Trailhead & Parking · GPS 37.758253, -119.805599</div>
+      <a class="parking" href="https://www.google.com/maps/dir/?api=1&destination=37.758253,-119.805599&travelmode=driving" target="_blank">P</a><div class="gps">Tuolumne Grove Trailhead & Parking · GPS 37.758253, -119.805599</div>
       <span class="badge forest">Bosque</span><span class="badge walk">Caminata</span>
     </div></div></div>
 
@@ -199,14 +201,14 @@
       <div class="activity"><input class="check" type="checkbox">Tunnel View</div>
       <div class="meta">15–20 min. Parking + mirador. Casi sin caminar.</div>
       <details class="spot"><summary>Qué hacemos / cuánto tiempo</summary><div class="spottext"><b>Qué hacemos:</b> dejamos el auto en el parking del mirador, cruzamos al punto panorámico y hacemos fotos de la vista clásica del valle: El Capitan a la izquierda, Half Dome al fondo y Bridalveil Fall a la derecha. No hace falta caminar más. <b>Tiempo:</b> 15–20 min.</div></details>
-      <a class="parking" href="https://www.google.com/maps/dir/?api=1&destination=37.71559,-119.67693&travelmode=driving" target="_blank">🅿️ Parking</a><div class="gps">Tunnel View overlook parking · GPS 37.71559, -119.67693</div>
+      <a class="parking" href="https://www.google.com/maps/dir/?api=1&destination=37.71559,-119.67693&travelmode=driving" target="_blank">P</a><div class="gps">Tunnel View overlook parking · GPS 37.71559, -119.67693</div>
     </div></div></div>
 
     <div class="card"><div class="row"><div class="time">10:00</div><div class="content">
       <div class="activity"><input class="check" type="checkbox">Cook’s Meadow / Yosemite Valley</div>
       <div class="meta">45–60 min · ~1–1.5 km · plano y abierto.</div>
       <details class="spot"><summary>Qué hacemos / cuánto tiempo</summary><div class="spottext"><b>Qué hacemos:</b> estacionamos en Yosemite Village Parking y caminamos un tramo de Cook’s Meadow. Buscamos las vistas hacia Yosemite Falls, Half Dome y las paredes del valle, sin hacer el loop completo si vamos justos de tiempo. Es plano y fácil. <b>Tiempo:</b> 45–60 min · ~1–1.5 km en versión corta.</div></details>
-      <a class="parking" href="https://www.google.com/maps/dir/?api=1&destination=37.7444,-119.5849&travelmode=driving" target="_blank">🅿️ Parking</a><div class="gps">Yosemite Village Day-Use Parking · GPS 37.7444, -119.5849</div>
+      <a class="parking" href="https://www.google.com/maps/dir/?api=1&destination=37.7444,-119.5849&travelmode=driving" target="_blank">P</a><div class="gps">Yosemite Village Day-Use Parking · GPS 37.7444, -119.5849</div>
       <span class="badge walk">Caminata suave</span>
     </div></div></div>
 
@@ -214,14 +216,14 @@
       <div class="activity"><input class="check" type="checkbox">El Capitan Meadow</div>
       <div class="meta">15–20 min · caminata mínima.</div>
       <details class="spot"><summary>Qué hacemos / cuánto tiempo</summary><div class="spottext"><b>Qué hacemos:</b> paramos en el área de estacionamiento al costado izquierdo de Northside Drive, frente a El Capitan Meadow, caminamos unos metros al borde de El Capitan Meadow y miramos la pared de más de 900 m desde abajo. Si hay escaladores, usar zoom del celular para tratar de encontrarlos. No entrar fuera de los senderos marcados de la pradera. <b>Tiempo:</b> 15–20 min.</div></details>
-      <a class="parking" href="https://www.google.com/maps/dir/?api=1&destination=37.724206,-119.636470&travelmode=driving" target="_blank">🅿️ Parking</a><div class="gps">El Capitan Meadow roadside parking, Northside Dr · GPS 37.724206, -119.636470</div>
+      <a class="parking" href="https://www.google.com/maps/dir/?api=1&destination=37.724206,-119.636470&travelmode=driving" target="_blank">P</a><div class="gps">El Capitan Meadow roadside parking, Northside Dr · GPS 37.724206, -119.636470</div>
     </div></div></div>
 
     <div class="card"><div class="row"><div class="time">11:40</div><div class="content">
       <div class="activity"><input class="check" type="checkbox">Valley View</div>
       <div class="meta">10–15 min · prácticamente al lado del parking.</div>
       <details class="spot"><summary>Qué hacemos / cuánto tiempo</summary><div class="spottext"><b>Qué hacemos:</b> última parada del valle. Estacionamos en el pequeño pullout de Valley View, bajamos prácticamente al lado del Merced River y hacemos la foto con El Capitan, Cathedral Rocks y Bridalveil Fall. El parking es extremadamente limitado y está en un pullout pavimentado sobre Northside Drive; el botón de abajo apunta al punto exacto. Si está lleno, seguimos y no perdemos tiempo. <b>Tiempo:</b> 10–15 min.</div></details>
-      <a class="parking" href="https://www.google.com/maps/dir/?api=1&destination=37.71600,-119.66868&travelmode=driving" target="_blank">🅿️ Parking</a><div class="gps">Valley View paved pullout, Northside Dr · GPS 37.71600, -119.66868</div>
+      <a class="parking" href="https://www.google.com/maps/dir/?api=1&destination=37.71600,-119.66868&travelmode=driving" target="_blank">P</a><div class="gps">Valley View paved pullout, Northside Dr · GPS 37.71600, -119.66868</div>
     </div></div></div>
 
     <div class="card"><div class="row"><div class="time">12:00</div><div class="content">
@@ -234,7 +236,7 @@
       <div class="activity"><input class="check" type="checkbox">Salida ideal máxima hacia San Francisco</div>
       <div class="meta">Objetivo: llegar con margen al Chase Center.</div>
       <details class="spot"><summary>Objetivo / margen recomendado</summary><div class="spottext"><b>Clave:</b> salir idealmente no más tarde de 13:00. Dejar colchón para tráfico, estacionamiento y entrada al estadio. <b>Margen deseado:</b> llegar a SF 1h30–2h antes del partido.</div></details>
-      <a class="map" href="https://www.google.com/maps/dir/?api=1&origin=Yosemite+Westgate+Lodge,+7633+Highway+120,+Groveland,+CA&destination=Chase+Center,+San+Francisco,+CA&waypoints=37.758253,-119.805599%7C37.71559,-119.67693%7C37.7444,-119.5849%7C37.724206,-119.636470%7C37.71600,-119.66868&travelmode=driving" target="_blank">Abrir mapa completo con parkings</a>
+      <a class="map" href="https://www.google.com/maps/dir/?api=1&origin=Yosemite+Westgate+Lodge,+7633+Highway+120,+Groveland,+CA&destination=Chase+Center,+San+Francisco,+CA&waypoints=37.758253,-119.805599%7C37.71559,-119.67693%7C37.7444,-119.5849%7C37.724206,-119.636470%7C37.71600,-119.66868&travelmode=driving" target="_blank" aria-label="Abrir en Google Maps" title="Abrir en Google Maps"><svg class="gmaps-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7z"/><circle cx="12" cy="9" r="2.7" fill="#fff"/></svg></a>
     </div></div></div>
 
     <div class="card"><div class="row"><div class="time">19:00</div><div class="content">
@@ -250,38 +252,38 @@
     <div class="card"><div class="row"><div class="time">07:00</div><div class="content">
       <div class="activity">Tuolumne Grove</div><div class="meta">1h30–1h45 · bosque de sequoias.</div>
       <details class="spot"><summary>Qué hacemos / cuánto tiempo</summary><div class="spottext"><b>Qué hacemos:</b> mismo recorrido de la alternativa 1, pero sin apurarnos: bajamos hasta el grove, recorremos el sector de sequoias gigantes y volvemos por la subida. <b>Tiempo:</b> 1h30–1h45 · ~4 km.</div></details>
-      <a class="parking" href="https://www.google.com/maps/dir/?api=1&destination=37.758253,-119.805599&travelmode=driving" target="_blank">🅿️ Parking</a><div class="gps">Tuolumne Grove Trailhead & Parking · GPS 37.758253, -119.805599</div>
+      <a class="parking" href="https://www.google.com/maps/dir/?api=1&destination=37.758253,-119.805599&travelmode=driving" target="_blank">P</a><div class="gps">Tuolumne Grove Trailhead & Parking · GPS 37.758253, -119.805599</div>
     </div></div></div>
     <div class="card"><div class="row"><div class="time">09:30</div><div class="content">
       <div class="activity">Tunnel View</div><div class="meta">20–30 min.</div>
       <details class="spot"><summary>Qué hacemos / cuánto tiempo</summary><div class="spottext"><b>Qué hacemos:</b> paramos en el mirador y hacemos la panorámica clásica completa del valle. Con más tiempo podemos movernos entre ambos lados del estacionamiento para buscar distintos ángulos. <b>Tiempo:</b> 20–30 min.</div></details>
-      <a class="parking" href="https://www.google.com/maps/dir/?api=1&destination=37.71559,-119.67693&travelmode=driving" target="_blank">🅿️ Parking</a><div class="gps">Tunnel View overlook parking · GPS 37.71559, -119.67693</div>
+      <a class="parking" href="https://www.google.com/maps/dir/?api=1&destination=37.71559,-119.67693&travelmode=driving" target="_blank">P</a><div class="gps">Tunnel View overlook parking · GPS 37.71559, -119.67693</div>
     </div></div></div>
     <div class="card"><div class="row"><div class="time">10:15</div><div class="content">
       <div class="activity">➕ NUEVO · Bridalveil Fall</div><div class="meta">30–40 min · ~0.8 km ida/vuelta.</div>
       <details class="spot"><summary>Qué hacemos / cuánto tiempo</summary><div class="spottext"><b>NUEVO en Alt. 2.</b> Estacionamos en Bridalveil Fall Trailhead y hacemos el sendero pavimentado hasta la base de la cascada. Son ~0.8 km ida/vuelta con pendiente suave. En octubre el caudal suele ser menor que en primavera, pero sigue siendo una parada muy característica de Yosemite. <b>Tiempo:</b> 30–40 min.</div></details>
-      <a class="parking" href="https://www.google.com/maps/dir/?api=1&destination=37.716669,-119.651890&travelmode=driving" target="_blank">🅿️ Parking</a><div class="gps">Bridalveil Fall main parking area · GPS 37.716669, -119.651890</div>
+      <a class="parking" href="https://www.google.com/maps/dir/?api=1&destination=37.716669,-119.651890&travelmode=driving" target="_blank">P</a><div class="gps">Bridalveil Fall main parking area · GPS 37.716669, -119.651890</div>
     </div></div></div>
     <div class="card"><div class="row"><div class="time">11:15</div><div class="content">
       <div class="activity">➕ MÁS COMPLETO · Yosemite Valley / Cook’s Meadow + almuerzo</div><div class="meta">2–3 h.</div>
       <details class="spot"><summary>Qué hacemos / cuánto tiempo</summary><div class="spottext"><b>MÁS TIEMPO que en Alt. 1.</b> Dejamos el auto en Yosemite Village Parking, caminamos Cook’s Meadow con más calma, pasamos por Yosemite Village/Welcome Center si interesa y almorzamos dentro del valle. La idea es disfrutar el paisaje sin estar mirando el reloj todo el tiempo. <b>Tiempo:</b> 2–3 h incluyendo almuerzo.</div></details>
-      <a class="parking" href="https://www.google.com/maps/dir/?api=1&destination=37.7444,-119.5849&travelmode=driving" target="_blank">🅿️ Parking</a><div class="gps">Yosemite Village Day-Use Parking · GPS 37.7444, -119.5849</div>
+      <a class="parking" href="https://www.google.com/maps/dir/?api=1&destination=37.7444,-119.5849&travelmode=driving" target="_blank">P</a><div class="gps">Yosemite Village Day-Use Parking · GPS 37.7444, -119.5849</div>
     </div></div></div>
     <div class="card"><div class="row"><div class="time">14:15</div><div class="content">
       <div class="activity">El Capitan Meadow</div><div class="meta">20 min.</div>
       <details class="spot"><summary>Qué hacemos / cuánto tiempo</summary><div class="spottext"><b>Qué hacemos:</b> nos acercamos al borde habilitado de la pradera para apreciar la escala real de El Capitan, buscar escaladores y mirar Cathedral Rocks hacia el lado opuesto. <b>Tiempo:</b> 20–30 min.</div></details>
-      <a class="parking" href="https://www.google.com/maps/dir/?api=1&destination=37.724206,-119.636470&travelmode=driving" target="_blank">🅿️ Parking</a><div class="gps">El Capitan Meadow roadside parking, Northside Dr · GPS 37.724206, -119.636470</div>
+      <a class="parking" href="https://www.google.com/maps/dir/?api=1&destination=37.724206,-119.636470&travelmode=driving" target="_blank">P</a><div class="gps">El Capitan Meadow roadside parking, Northside Dr · GPS 37.724206, -119.636470</div>
     </div></div></div>
     <div class="card"><div class="row"><div class="time">14:45</div><div class="content">
       <div class="activity">Valley View</div><div class="meta">15–20 min.</div>
       <details class="spot"><summary>Qué hacemos / cuánto tiempo</summary><div class="spottext"><b>Qué hacemos:</b> paramos en el pequeño pullout sobre Northside Drive para la foto clásica desde el Merced River. Es una de las mejores últimas vistas antes de salir del valle. <b>Tiempo:</b> 15–20 min. Si está lleno, esperar solo unos minutos porque el espacio es muy limitado.</div></details>
-      <a class="parking" href="https://www.google.com/maps/dir/?api=1&destination=37.71600,-119.66868&travelmode=driving" target="_blank">🅿️ Parking</a><div class="gps">Valley View paved pullout, Northside Dr · GPS 37.71600, -119.66868</div>
+      <a class="parking" href="https://www.google.com/maps/dir/?api=1&destination=37.71600,-119.66868&travelmode=driving" target="_blank">P</a><div class="gps">Valley View paved pullout, Northside Dr · GPS 37.71600, -119.66868</div>
     </div></div></div>
     <div class="card"><div class="row"><div class="time">16:00</div><div class="content">
       <div class="activity">➕ NUEVO · Glacier Point</div><div class="meta">~2 h + manejo · sujeto a apertura/condiciones.</div>
       <details class="spot"><summary>Qué hacemos / cuánto tiempo</summary><div class="spottext"><b>NUEVO en Alt. 2.</b> Subimos en auto hasta Glacier Point, estacionamos y caminamos pocos minutos hasta los miradores. Desde arriba vemos Half Dome de frente, Yosemite Valley muy abajo y la High Sierra. No requiere trekking largo; el valor está en la vista. <b>Tiempo:</b> 45–60 min en el mirador + tiempo de manejo. Solo hacerlo si Glacier Point Road está abierta y las condiciones son buenas.</div></details>
-      <a class="parking" href="https://www.google.com/maps/dir/?api=1&destination=37.726956,-119.575298&travelmode=driving" target="_blank">🅿️ Parking</a><div class="gps">Glacier Point Parking · GPS 37.726956, -119.575298</div>
-      <a class="map" href="https://www.google.com/maps/dir/?api=1&origin=Yosemite+Westgate+Lodge,+7633+Highway+120,+Groveland,+CA&destination=37.726956,-119.575298&waypoints=37.758253,-119.805599%7C37.71559,-119.67693%7C37.716669,-119.651890%7C37.7444,-119.5849%7C37.724206,-119.636470%7C37.71600,-119.66868&travelmode=driving" target="_blank">Abrir mapa completo con parkings</a>
+      <a class="parking" href="https://www.google.com/maps/dir/?api=1&destination=37.726956,-119.575298&travelmode=driving" target="_blank">P</a><div class="gps">Glacier Point Parking · GPS 37.726956, -119.575298</div>
+      <a class="map" href="https://www.google.com/maps/dir/?api=1&origin=Yosemite+Westgate+Lodge,+7633+Highway+120,+Groveland,+CA&destination=37.726956,-119.575298&waypoints=37.758253,-119.805599%7C37.71559,-119.67693%7C37.716669,-119.651890%7C37.7444,-119.5849%7C37.724206,-119.636470%7C37.71600,-119.66868&travelmode=driving" target="_blank" aria-label="Abrir en Google Maps" title="Abrir en Google Maps"><svg class="gmaps-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7z"/><circle cx="12" cy="9" r="2.7" fill="#fff"/></svg></a>
     </div></div></div>
   </details>
 </section>
@@ -298,7 +300,7 @@
     <div class="activity"><input class="check" type="checkbox">Salida hacia SFO</div>
     <div class="meta">Rental Car Center ~21:00–21:15. Devolución 22:00.</div>
     <details class="spot"><summary>Objetivo / cuánto tiempo</summary><div class="spottext"><b>Objetivo:</b> cargar combustible si corresponde, devolver el auto y tomar AirTrain hacia la terminal. <b>Tiempo:</b> dejar 45–60 min entre llegada al Rental Car Center y estar en la terminal.</div></details>
-    <a class="map" href="https://www.google.com/maps/dir/?api=1&origin=Golden+Gate+Bridge,+San+Francisco,+CA&destination=San+Francisco+International+Airport,+San+Francisco,+CA&waypoints=Battery+Spencer,+Sausalito,+CA%7CSausalito,+CA%7CMount+Tamalpais+State+Park,+Mill+Valley,+CA%7CHalf+Moon+Bay,+CA&travelmode=driving" target="_blank">Abrir mapa completo</a>
+    <a class="map" href="https://www.google.com/maps/dir/?api=1&origin=Golden+Gate+Bridge,+San+Francisco,+CA&destination=San+Francisco+International+Airport,+San+Francisco,+CA&waypoints=Battery+Spencer,+Sausalito,+CA%7CSausalito,+CA%7CMount+Tamalpais+State+Park,+Mill+Valley,+CA%7CHalf+Moon+Bay,+CA&travelmode=driving" target="_blank" aria-label="Abrir en Google Maps" title="Abrir en Google Maps"><svg class="gmaps-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7z"/><circle cx="12" cy="9" r="2.7" fill="#fff"/></svg></a>
   </div></div></div>
 
   <div class="card"><div class="row"><div class="time">01:00</div><div class="content"><div class="activity">Vuelo · domingo 18</div><details class="spot"><summary>Objetivo / margen recomendado</summary><div class="spottext"><b>Objetivo:</b> estar en la terminal con margen suficiente para equipaje, seguridad y embarque internacional. <b>Margen:</b> 3 h antes del vuelo.</div></details></div></div></div>
