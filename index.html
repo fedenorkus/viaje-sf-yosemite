@@ -35,6 +35,12 @@
   .note{font-size:13px;color:var(--muted);margin-top:8px}
   .footer{color:var(--muted);font-size:12px;margin-top:18px;text-align:center}
   .check{margin-right:8px;transform:scale(1.2)}
+  .spot{border:0;background:transparent;padding:0;margin:7px 0 0}
+  .spot summary{list-style:none;font-size:13px;font-weight:750;color:var(--accent);cursor:pointer;display:flex;align-items:center;gap:6px}
+  .spot summary::-webkit-details-marker{display:none}
+  .spot summary::before{content:"+";display:inline-flex;align-items:center;justify-content:center;width:20px;height:20px;border-radius:50%;background:#eef4ff;color:var(--accent);font-size:16px;font-weight:800;line-height:1}
+  .spot[open] summary::before{content:"−"}
+  .spot .spottext{font-size:13px;line-height:1.4;color:var(--text);padding:6px 0 2px 26px}
   @media (max-width:480px){
     .wrap{padding:8px 10px 28px}
     .time{min-width:68px;font-size:14px}
@@ -79,8 +85,34 @@
 
   <div class="card"><div class="row"><div class="time">13:30</div><div class="content">
     <div class="activity"><input class="check" type="checkbox">Fisherman’s Wharf → Marina Green → Palace of Fine Arts → Crissy Field → Presidio → Golden Gate</div>
-    <div class="meta">Mejor en e-bike/Bay Wheels.</div>
+    <div class="meta">Mejor en e-bike/Bay Wheels. Tocá el + para ver qué vale la pena mirar en cada parada.</div>
     <span class="badge">e-bike</span>
+
+    <details class="spot">
+      <summary>Marina Green</summary>
+      <div class="spottext"><b>Qué mirar:</b> la vista abierta de la bahía, Alcatraz y el Golden Gate. Es una parada corta; lo mejor es recorrer el frente costero y sacar fotos con los barcos y el puente de fondo.</div>
+    </details>
+
+    <details class="spot">
+      <summary>Palace of Fine Arts</summary>
+      <div class="spottext"><b>Qué mirar:</b> la gran rotonda, las columnas y el lago. Entren al sector central y rodeen parte del estanque: es el punto más fotogénico y alcanza con unos 15–20 minutos.</div>
+    </details>
+
+    <details class="spot">
+      <summary>Crissy Field</summary>
+      <div class="spottext"><b>Qué mirar:</b> la perspectiva del Golden Gate casi a nivel del agua. Avancen por el paseo costero hacia el puente; las mejores vistas aparecen a medida que se acercan a West Bluff.</div>
+    </details>
+
+    <details class="spot">
+      <summary>Presidio / Tunnel Tops</summary>
+      <div class="spottext"><b>Qué mirar:</b> los miradores elevados hacia la bahía y el Golden Gate, con el parque integrado sobre los antiguos túneles. Vale más por las vistas y el diseño del lugar que por caminar mucho.</div>
+    </details>
+
+    <details class="spot">
+      <summary>Golden Gate Bridge</summary>
+      <div class="spottext"><b>Qué mirar:</b> el puente desde el Welcome Center y Battery East. Si tienen tiempo, avancen un tramo caminando o en bici sobre el puente para sentir la escala, pero no hace falta cruzarlo completo.</div>
+    </details>
+
     <a class="map" href="https://www.google.com/maps/dir/?api=1&origin=Fisherman%27s+Wharf,+San+Francisco,+CA&destination=Golden+Gate+Bridge+Welcome+Center,+San+Francisco,+CA&waypoints=Marina+Green,+San+Francisco,+CA%7CPalace+of+Fine+Arts,+San+Francisco,+CA%7CCrissy+Field,+San+Francisco,+CA%7CPresidio+Tunnel+Tops,+San+Francisco,+CA&travelmode=bicycling" target="_blank">Abrir mapa</a>
   </div></div></div>
 
