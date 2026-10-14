@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SF + Yosemite · Oct 14–17, 2026</title>
+<style>
+  :root{
+    --bg:#f6f7f9; --card:#fff; --text:#17191c; --muted:#6b7280;
+    --line:#e5e7eb; --accent:#0f62fe; --accent2:#111827; --ok:#0a7f4f;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif}
+  .wrap{max-width:760px;margin:auto;padding:12px 12px 40px}
+  header{position:sticky;top:0;z-index:5;background:rgba(246,247,249,.96);backdrop-filter:blur(10px);padding:10px 0 8px}
+  h1{font-size:21px;margin:0 0 4px}
+  .sub{color:var(--muted);font-size:13px}
+  .tabs{display:flex;gap:8px;overflow:auto;padding:10px 0 2px}
+  .tabs button{white-space:nowrap;border:1px solid var(--line);background:#fff;border-radius:999px;padding:9px 13px;font-weight:600}
+  .tabs button.active{background:var(--accent2);color:#fff;border-color:var(--accent2)}
+  .day{display:none}.day.active{display:block}
+  .section-title{font-size:18px;margin:16px 2px 10px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px;margin:10px 0;box-shadow:0 1px 2px rgba(0,0,0,.03)}
+  .row{display:flex;gap:10px;align-items:flex-start}
+  .time{min-width:76px;font-weight:800;font-size:15px}
+  .content{flex:1}
+  .activity{font-weight:750;font-size:16px;line-height:1.2}
+  .meta{color:var(--muted);font-size:13px;margin-top:5px;line-height:1.35}
+  .badge{display:inline-block;background:#eef2ff;color:#3730a3;border-radius:999px;padding:4px 8px;font-size:12px;font-weight:700;margin:5px 5px 0 0}
+  .forest{background:#ecfdf3;color:#166534}.walk{background:#fef3c7;color:#92400e}.drive{background:#e0f2fe;color:#075985}
+  .map{display:inline-block;margin-top:10px;text-decoration:none;background:var(--accent);color:white;padding:9px 12px;border-radius:10px;font-size:14px;font-weight:700}
+  .alt{border-left:4px solid var(--accent)}
+  details{background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px;margin:10px 0}
+  summary{font-weight:800;cursor:pointer}
+  .note{font-size:13px;color:var(--muted);margin-top:8px}
+  .footer{color:var(--muted);font-size:12px;margin-top:18px;text-align:center}
+  .check{margin-right:8px;transform:scale(1.2)}
+  @media (max-width:480px){
+    .wrap{padding:8px 10px 28px}
+    .time{min-width:68px;font-size:14px}
+    .activity{font-size:15px}
+    .card{padding:12px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>San Francisco + Yosemite</h1>
+  <div class="sub">14–17 octubre 2026 · versión móvil</div>
+  <div class="tabs">
+    <button class="active" onclick="showDay('d14',this)">Mié 14</button>
+    <button onclick="showDay('d15',this)">Jue 15</button>
+    <button onclick="showDay('d16',this)">Vie 16</button>
+    <button onclick="showDay('d17',this)">Sáb 17</button>
+  </div>
+</header>
+
+<section id="d14" class="day active">
+  <h2 class="section-title">Miércoles 14 · Alcatraz + costa + rooftop</h2>
+
+  <div class="card"><div class="row"><div class="time">08:15</div><div class="content">
+    <div class="activity"><input class="check" type="checkbox">Hotel → Pier 33</div>
+    <div class="meta">Uber/Waymo. Llegar 08:40–08:45. Boarding 09:05.</div>
+    <a class="map" href="https://www.google.com/maps/dir/?api=1&origin=Holiday+Inn+San+Francisco+Golden+Gateway,+1500+Van+Ness+Ave,+San+Francisco,+CA&destination=Pier+33,+San+Francisco,+CA&travelmode=driving" target="_blank">Abrir mapa</a>
+  </div></div></div>
+
+  <div class="card"><div class="row"><div class="time">09:40</div><div class="content">
+    <div class="activity"><input class="check" type="checkbox">Alcatraz</div>
+    <div class="meta">Recorrido a su ritmo. Objetivo: ferry de regreso para estar en Pier 33 cerca de 11:45–12:00.</div>
+    <span class="badge walk">A pie</span>
+  </div></div></div>
+
+  <div class="card"><div class="row"><div class="time">12:15</div><div class="content">
+    <div class="activity"><input class="check" type="checkbox">Scoma’s Fisherman’s Wharf</div>
+    <div class="meta">Reserva para 2. Desde Pier 33, 15–20 min caminando.</div>
+    <a class="map" href="https://www.google.com/maps/dir/?api=1&origin=Pier+33,+San+Francisco,+CA&destination=Scoma%27s+Restaurant,+1965+Al+Scoma+Way,+San+Francisco,+CA&travelmode=walking" target="_blank">Abrir mapa</a>
+  </div></div></div>
+
+  <div class="card"><div class="row"><div class="time">13:30</div><div class="content">
+    <div class="activity"><input class="check" type="checkbox">Fisherman’s Wharf → Marina Green → Palace of Fine Arts → Crissy Field → Presidio → Golden Gate</div>
+    <div class="meta">Mejor en e-bike/Bay Wheels.</div>
+    <span class="badge">e-bike</span>
+    <a class="map" href="https://www.google.com/maps/dir/?api=1&origin=Fisherman%27s+Wharf,+San+Francisco,+CA&destination=Golden+Gate+Bridge+Welcome+Center,+San+Francisco,+CA&waypoints=Marina+Green,+San+Francisco,+CA%7CPalace+of+Fine+Arts,+San+Francisco,+CA%7CCrissy+Field,+San+Francisco,+CA%7CPresidio+Tunnel+Tops,+San+Francisco,+CA&travelmode=bicycling" target="_blank">Abrir mapa</a>
+  </div></div></div>
+
+  <div class="card"><div class="row"><div class="time">16:30</div><div class="content">
+    <div class="activity"><input class="check" type="checkbox">Lands End → Sutro Baths → Ocean Beach</div>
+    <div class="meta">Uber/Waymo desde Golden Gate a Lands End. Después caminar.</div>
+    <span class="badge walk">Caminata</span>
+    <a class="map" href="https://www.google.com/maps/dir/?api=1&origin=Lands+End+Lookout,+San+Francisco,+CA&destination=Ocean+Beach,+San+Francisco,+CA&waypoints=Sutro+Baths,+San+Francisco,+CA&travelmode=walking" target="_blank">Abrir mapa</a>
+  </div></div></div>
+
+  <div class="card"><div class="row"><div class="time">20:30</div><div class="content">
+    <div class="activity"><input class="check" type="checkbox">Rooftop dinner</div>
+    <div class="meta">Reservas: Cavaña / Charmaine’s / Chotto Matte. Elegir 1 y cancelar las otras.</div>
+  </div></div></div>
+</section>
+
+<section id="d15" class="day">
+  <h2 class="section-title">Jueves 15 · SF urbano + salida a Yosemite</h2>
+
+  <div class="card"><div class="row"><div class="time">08:30</div><div class="content">
+    <div class="activity"><input class="check" type="checkbox">Desayuno + check-out + dejar valijas</div>
+    <div class="meta">Las valijas quedan en Holiday Inn.</div>
+  </div></div></div>
+
+  <div class="card"><div class="row"><div class="time">09:15</div><div class="content">
+    <div class="activity"><input class="check" type="checkbox">Lombard → North Beach → Chinatown → Union Square</div>
+    <div class="meta">Almuerzo 12:00–13:00. Recorrido termina en Enterprise, 233 Ellis St.</div>
+    <span class="badge walk">Caminando</span>
+    <a class="map" href="https://www.google.com/maps/dir/?api=1&origin=Holiday+Inn+San+Francisco+Golden+Gateway,+1500+Van+Ness+Ave,+San+Francisco,+CA&destination=233+Ellis+St,+San+Francisco,+CA&waypoints=Lombard+Street,+San+Francisco,+CA%7CNorth+Beach,+San+Francisco,+CA%7CChinatown,+San+Francisco,+CA%7CUnion+Square,+San+Francisco,+CA&travelmode=walking" target="_blank">Abrir mapa</a>
+  </div></div></div>
+
+  <div class="card"><div class="row"><div class="time">17:00</div><div class="content">
+    <div class="activity"><input class="check" type="checkbox">Retiro del auto — Enterprise</div>
+    <div class="meta">233 Ellis St. Si se consigue adelantar, mejor.</div>
+    <span class="badge drive">Auto</span>
+  </div></div></div>
+
+  <div class="card"><div class="row"><div class="time">17:20</div><div class="content">
+    <div class="activity"><input class="check" type="checkbox">Enterprise → Holiday Inn → cargar valijas → Yosemite</div>
+    <div class="meta">Salida directa hacia Yosemite Westgate Lodge.</div>
+    <a class="map" href="https://www.google.com/maps/dir/?api=1&origin=233+Ellis+St,+San+Francisco,+CA&destination=Yosemite+Westgate+Lodge,+7633+Highway+120,+Groveland,+CA&waypoints=Holiday+Inn+San+Francisco+Golden+Gateway,+1500+Van+Ness+Ave,+San+Francisco,+CA&travelmode=driving" target="_blank">Abrir mapa</a>
+  </div></div></div>
+</section>
+
+<section id="d16" class="day">
+  <h2 class="section-title">Viernes 16 · Yosemite</h2>
+
+  <details open class="alt">
+    <summary>Alternativa 1 · Yosemite + Warriors 19:00</summary>
+
+    <div class="card"><div class="row"><div class="time">06:15</div><div class="content">
+      <div class="activity"><input class="check" type="checkbox">Salida Westgate Lodge</div>
+    </div></div></div>
+
+    <div class="card"><div class="row"><div class="time">07:00</div><div class="content">
+      <div class="activity"><input class="check" type="checkbox">Tuolumne Grove</div>
+      <div class="meta">1h30–1h45 · ~4 km · bosque de sequoias · subida al regreso.</div>
+      <span class="badge forest">Bosque</span><span class="badge walk">Caminata</span>
+    </div></div></div>
+
+    <div class="card"><div class="row"><div class="time">09:30</div><div class="content">
+      <div class="activity"><input class="check" type="checkbox">Tunnel View</div>
+      <div class="meta">15–20 min. Parking + mirador. Casi sin caminar.</div>
+    </div></div></div>
+
+    <div class="card"><div class="row"><div class="time">10:00</div><div class="content">
+      <div class="activity"><input class="check" type="checkbox">Cook’s Meadow / Yosemite Valley</div>
+      <div class="meta">45–60 min · ~1–1.5 km · plano y abierto.</div>
+      <span class="badge walk">Caminata suave</span>
+    </div></div></div>
+
+    <div class="card"><div class="row"><div class="time">11:10</div><div class="content">
+      <div class="activity"><input class="check" type="checkbox">El Capitan Meadow</div>
+      <div class="meta">15–20 min · caminata mínima.</div>
+    </div></div></div>
+
+    <div class="card"><div class="row"><div class="time">11:40</div><div class="content">
+      <div class="activity"><input class="check" type="checkbox">Valley View</div>
+      <div class="meta">10–15 min · prácticamente al lado del parking.</div>
+    </div></div></div>
+
+    <div class="card"><div class="row"><div class="time">12:00</div><div class="content">
+      <div class="activity"><input class="check" type="checkbox">Margen flexible</div>
+      <div class="meta">Hasta 1 hora para sumar algo si vienen adelantados.</div>
+    </div></div></div>
+
+    <div class="card"><div class="row"><div class="time">13:00</div><div class="content">
+      <div class="activity"><input class="check" type="checkbox">Salida ideal máxima hacia San Francisco</div>
+      <div class="meta">Objetivo: llegar con margen al Chase Center.</div>
+      <a class="map" href="https://www.google.com/maps/dir/?api=1&origin=Yosemite+Westgate+Lodge,+7633+Highway+120,+Groveland,+CA&destination=Chase+Center,+San+Francisco,+CA&waypoints=Tuolumne+Grove+Trailhead,+Yosemite+National+Park,+CA%7CTunnel+View,+Yosemite+National+Park,+CA%7CYosemite+Village,+Yosemite+National+Park,+CA%7CEl+Capitan+Meadow,+Yosemite+National+Park,+CA%7CValley+View,+Yosemite+National+Park,+CA&travelmode=driving" target="_blank">Abrir mapa completo</a>
+    </div></div></div>
+
+    <div class="card"><div class="row"><div class="time">19:00</div><div class="content">
+      <div class="activity"><input class="check" type="checkbox">Warriors</div>
+    </div></div></div>
+  </details>
+
+  <details>
+    <summary>Alternativa 2 · Yosemite completo, sin partido</summary>
+    <div class="note">Mismo comienzo, pero se agrega Bridalveil Fall, más tiempo en Yosemite Valley y Glacier Point, sujeto a apertura/condiciones.</div>
+
+    <div class="card"><div class="row"><div class="time">07:00</div><div class="content">
+      <div class="activity">Tuolumne Grove</div><div class="meta">1h30–1h45 · bosque de sequoias.</div>
+    </div></div></div>
+    <div class="card"><div class="row"><div class="time">09:30</div><div class="content">
+      <div class="activity">Tunnel View</div><div class="meta">20–30 min.</div>
+    </div></div></div>
+    <div class="card"><div class="row"><div class="time">10:15</div><div class="content">
+      <div class="activity">Bridalveil Fall</div><div class="meta">30–40 min · ~0.8 km ida/vuelta.</div>
+    </div></div></div>
+    <div class="card"><div class="row"><div class="time">11:15</div><div class="content">
+      <div class="activity">Yosemite Valley / Cook’s Meadow + almuerzo</div><div class="meta">2–3 h.</div>
+    </div></div></div>
+    <div class="card"><div class="row"><div class="time">14:15</div><div class="content">
+      <div class="activity">El Capitan Meadow</div><div class="meta">20 min.</div>
+    </div></div></div>
+    <div class="card"><div class="row"><div class="time">14:45</div><div class="content">
+      <div class="activity">Valley View</div><div class="meta">15–20 min.</div>
+    </div></div></div>
+    <div class="card"><div class="row"><div class="time">16:00</div><div class="content">
+      <div class="activity">Glacier Point</div><div class="meta">~2 h + manejo · sujeto a apertura/condiciones.</div>
+      <a class="map" href="https://www.google.com/maps/dir/?api=1&origin=Yosemite+Westgate+Lodge,+7633+Highway+120,+Groveland,+CA&destination=Glacier+Point,+Yosemite+National+Park,+CA&waypoints=Tuolumne+Grove+Trailhead,+Yosemite+National+Park,+CA%7CTunnel+View,+Yosemite+National+Park,+CA%7CBridalveil+Fall,+Yosemite+National+Park,+CA%7CYosemite+Village,+Yosemite+National+Park,+CA%7CEl+Capitan+Meadow,+Yosemite+National+Park,+CA%7CValley+View,+Yosemite+National+Park,+CA&travelmode=driving" target="_blank">Abrir mapa completo</a>
+    </div></div></div>
+  </details>
+</section>
+
+<section id="d17" class="day">
+  <h2 class="section-title">Sábado 17 · Golden Gate + Marin + costa + SFO</h2>
+
+  <div class="card"><div class="row"><div class="time">~11:00</div><div class="content"><div class="activity"><input class="check" type="checkbox">Golden Gate Bridge</div></div></div></div>
+  <div class="card"><div class="row"><div class="time">~11:45</div><div class="content"><div class="activity"><input class="check" type="checkbox">Battery Spencer / Marin Headlands</div><div class="meta">Gran vista del puente. Caminata corta.</div></div></div></div>
+  <div class="card"><div class="row"><div class="time">12:30</div><div class="content"><div class="activity"><input class="check" type="checkbox">Sausalito + almuerzo</div><div class="meta">12:30–14:30.</div></div></div></div>
+  <div class="card"><div class="row"><div class="time">15:00</div><div class="content"><div class="activity"><input class="check" type="checkbox">Mount Tamalpais</div><div class="meta">Miradores + caminata corta. No trekking largo.</div></div></div></div>
+  <div class="card"><div class="row"><div class="time">18:30</div><div class="content"><div class="activity"><input class="check" type="checkbox">Half Moon Bay</div><div class="meta">Main Street + costa + cena temprana.</div></div></div></div>
+  <div class="card"><div class="row"><div class="time">20:15</div><div class="content">
+    <div class="activity"><input class="check" type="checkbox">Salida hacia SFO</div>
+    <div class="meta">Rental Car Center ~21:00–21:15. Devolución 22:00.</div>
+    <a class="map" href="https://www.google.com/maps/dir/?api=1&origin=Golden+Gate+Bridge,+San+Francisco,+CA&destination=San+Francisco+International+Airport,+San+Francisco,+CA&waypoints=Battery+Spencer,+Sausalito,+CA%7CSausalito,+CA%7CMount+Tamalpais+State+Park,+Mill+Valley,+CA%7CHalf+Moon+Bay,+CA&travelmode=driving" target="_blank">Abrir mapa completo</a>
+  </div></div></div>
+
+  <div class="card"><div class="row"><div class="time">01:00</div><div class="content"><div class="activity">Vuelo · domingo 18</div></div></div></div>
+</section>
+
+<div class="footer">Las casillas quedan guardadas en este dispositivo/navegador.</div>
+</div>
+
+<script>
+function showDay(id,btn){
+  document.querySelectorAll('.day').forEach(x=>x.classList.remove('active'));
+  document.querySelectorAll('.tabs button').forEach(x=>x.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  btn.classList.add('active');
+}
+const boxes=[...document.querySelectorAll('input[type=checkbox]')];
+boxes.forEach((b,i)=>{
+  const k='tripcheck_'+i;
+  b.checked=localStorage.getItem(k)==='1';
+  b.addEventListener('change',()=>localStorage.setItem(k,b.checked?'1':'0'));
+});
+</script>
+</body>
+</html>
