@@ -50,6 +50,8 @@
   .gps{display:none}
   .map{display:inline-flex;align-items:center;justify-content:center;margin-top:10px;text-decoration:none;background:#fff;color:var(--text);width:36px;height:36px;border:1px solid var(--line);border-radius:10px;font-size:20px;font-weight:700;padding:0}
   .gmaps-icon{width:22px;height:22px;display:block}
+  .mapset{display:flex;gap:7px;align-items:center;margin-top:8px}
+  .navbtn{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:10px;border:1px solid var(--line);background:#fff;text-decoration:none;font-size:18px;font-weight:800;color:#2563eb}
   @media (max-width:480px){
     .wrap{padding:8px 10px 28px}
     .time{min-width:68px;font-size:14px}
@@ -77,22 +79,33 @@
   <div class="card"><div class="row"><div class="time">08:15</div><div class="content">
     <div class="activity"><input class="check" type="checkbox">Hotel → Pier 33 <span class="duration">25–30 min</span></div>
     <div class="meta">Uber/Waymo. Llegar 08:40–08:45. Boarding 09:05.</div>
-    <details class="spot"><summary><input class="check subcheck" type="checkbox"><input class="check subcheck" type="checkbox">Qué hacer</summary><div class="spottext"><b>Objetivo:</b> llegar con margen, ubicar la fila de embarque y usar baños antes de subir.</div></details>
-    <a class="map" href="https://www.google.com/maps/dir/?api=1&destination=Pier+33,+San+Francisco,+CA&travelmode=driving" target="_blank" aria-label="Abrir en Google Maps" title="Abrir en Google Maps"><svg class="gmaps-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7z"/><circle cx="12" cy="9" r="2.7" fill="#fff"/></svg></a>
+    <details class="spot"><summary><input class="check subcheck" type="checkbox">Qué hacer</summary><div class="spottext"><b>Objetivo:</b> llegar con margen, ubicar la fila de embarque y usar baños antes de subir.</div></details>
+    <div class="mapset">
+    <a class="map" href="https://www.google.com/maps/dir/?api=1&destination=Pier+33%2C+San+Francisco%2C+CA&travelmode=driving" target="_blank" aria-label="Ruta en Google Maps" title="Ruta en Google Maps"><svg class="gmaps-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7z"/><circle cx="12" cy="9" r="2.7" fill="#fff"/></svg></a>
+    <a class="navbtn" href="https://www.google.com/maps/dir/?api=1&destination=Pier+33%2C+San+Francisco%2C+CA&travelmode=driving&dir_action=navigate" target="_blank" aria-label="Navegar en Google Maps" title="Navegar en Google Maps">➤</a>
+  </div>
   </div></div></div>
 
   <div class="card"><div class="row"><div class="time">09:40</div><div class="content">
     <div class="activity"><input class="check" type="checkbox">Alcatraz <span class="duration">1h20–1h40</span></div>
     <div class="meta">Recorrido a su ritmo. Objetivo: ferry de regreso para estar en Pier 33 cerca de 11:45–12:00.</div>
-    <details class="spot"><summary><input class="check subcheck" type="checkbox"><input class="check subcheck" type="checkbox">Qué ver</summary><div class="spottext"><b>Imperdible:</b> Cellhouse Audio Tour, celdas principales, patio de recreo y vistas de San Francisco. <b>Además mirar:</b> el faro de Alcatraz, la antigua casa del alcaide, la torre de agua y los restos de la etapa militar de la isla; ayudan a entender que Alcatraz fue fortificación antes que prisión federal.</div></details>
+    <details class="spot"><summary><input class="check subcheck" type="checkbox">Qué ver</summary><div class="spottext"><b>Imperdible:</b> Cellhouse Audio Tour, celdas principales, patio de recreo y vistas de San Francisco. <b>Además mirar:</b> el faro de Alcatraz, la antigua casa del alcaide, la torre de agua y los restos de la etapa militar de la isla; ayudan a entender que Alcatraz fue fortificación antes que prisión federal.</div></details>
     <span class="badge walk">A pie</span>
+  
+    <div class="mapset">
+    <a class="map" href="https://www.google.com/maps/dir/?api=1&destination=Pier+33%2C+San+Francisco%2C+CA&travelmode=walking" target="_blank" aria-label="Ruta en Google Maps" title="Ruta en Google Maps"><svg class="gmaps-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7z"/><circle cx="12" cy="9" r="2.7" fill="#fff"/></svg></a>
+    <a class="navbtn" href="https://www.google.com/maps/dir/?api=1&destination=Pier+33%2C+San+Francisco%2C+CA&travelmode=walking&dir_action=navigate" target="_blank" aria-label="Navegar en Google Maps" title="Navegar en Google Maps">➤</a>
+  </div>
   </div></div></div>
 
   <div class="card"><div class="row"><div class="time">12:15</div><div class="content">
     <div class="activity"><input class="check" type="checkbox">Scoma’s Fisherman’s Wharf <span class="duration">60–75 min</span></div>
     <div class="meta">Reserva para 2. Desde Pier 33, 15–20 min caminando.</div>
-    <details class="spot"><summary><input class="check subcheck" type="checkbox"><input class="check subcheck" type="checkbox">Qué hacer</summary><div class="spottext"><b>Idea:</b> almuerzo tranquilo junto al agua; aprovechar las vistas del puerto y Fisherman’s Wharf sin desviarse demasiado.</div></details>
-    <a class="map" href="https://www.google.com/maps/dir/?api=1&destination=Scoma%27s+Restaurant,+1965+Al+Scoma+Way,+San+Francisco,+CA&travelmode=walking" target="_blank" aria-label="Abrir en Google Maps" title="Abrir en Google Maps"><svg class="gmaps-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7z"/><circle cx="12" cy="9" r="2.7" fill="#fff"/></svg></a>
+    <details class="spot"><summary><input class="check subcheck" type="checkbox">Qué hacer</summary><div class="spottext"><b>Idea:</b> almuerzo tranquilo junto al agua; aprovechar las vistas del puerto y Fisherman’s Wharf sin desviarse demasiado.</div></details>
+    <div class="mapset">
+    <a class="map" href="https://www.google.com/maps/dir/?api=1&destination=Scoma's+Restaurant%2C+1965+Al+Scoma+Way%2C+San+Francisco%2C+CA&travelmode=walking" target="_blank" aria-label="Ruta en Google Maps" title="Ruta en Google Maps"><svg class="gmaps-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7z"/><circle cx="12" cy="9" r="2.7" fill="#fff"/></svg></a>
+    <a class="navbtn" href="https://www.google.com/maps/dir/?api=1&destination=Scoma's+Restaurant%2C+1965+Al+Scoma+Way%2C+San+Francisco%2C+CA&travelmode=walking&dir_action=navigate" target="_blank" aria-label="Navegar en Google Maps" title="Navegar en Google Maps">➤</a>
+  </div>
   </div></div></div>
 
   <div class="card"><div class="row"><div class="time">13:30</div><div class="content">
@@ -125,45 +138,80 @@
       <div class="spottext"><b>Qué mirar:</b> el puente desde el Welcome Center y Battery East. <b>Detalles:</b> las torres Art Déco, los remaches, los cables principales y las placas/elementos dedicados a la ingeniería del puente. Cerca del acceso sur también vale mirar las antiguas baterías costeras del Presidio. Si tienen tiempo, avancen un tramo caminando o en bici sobre el puente para sentir la escala; no hace falta cruzarlo completo.</div>
     </details>
 
-    <a class="map" href="https://www.google.com/maps/dir/?api=1&destination=Golden+Gate+Bridge+Welcome+Center,+San+Francisco,+CA&waypoints=Marina+Green,+San+Francisco,+CA%7CPalace+of+Fine+Arts,+San+Francisco,+CA%7CCrissy+Field,+San+Francisco,+CA%7CPresidio+Tunnel+Tops,+San+Francisco,+CA&travelmode=bicycling" target="_blank" aria-label="Abrir en Google Maps" title="Abrir en Google Maps"><svg class="gmaps-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7z"/><circle cx="12" cy="9" r="2.7" fill="#fff"/></svg></a>
+    <div class="mapset">
+    <a class="map" href="https://www.google.com/maps/dir/?api=1&destination=Golden+Gate+Bridge+Welcome+Center%2C+San+Francisco%2C+CA&travelmode=driving" target="_blank" aria-label="Ruta en Google Maps" title="Ruta en Google Maps"><svg class="gmaps-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7z"/><circle cx="12" cy="9" r="2.7" fill="#fff"/></svg></a>
+    <a class="navbtn" href="https://www.google.com/maps/dir/?api=1&destination=Golden+Gate+Bridge+Welcome+Center%2C+San+Francisco%2C+CA&travelmode=driving&dir_action=navigate" target="_blank" aria-label="Navegar en Google Maps" title="Navegar en Google Maps">➤</a>
+  </div>
   </div></div></div>
 
   <div class="card"><div class="row"><div class="time">15:45</div><div class="content">
     <div class="activity"><input class="check" type="checkbox">Golden Gate Park <span class="duration">~2 h</span></div>
     <div class="meta">Después del puente: Uber/Waymo al parque y recorrido de este a oeste.</div>
 
-    <details class="spot"><summary><input class="check subcheck" type="checkbox"><input class="check subcheck" type="checkbox">Japanese Tea Garden · 35–45 min</summary>
+    <details class="spot"><summary><input class="check subcheck" type="checkbox">Japanese Tea Garden · 35–45 min</summary>
       <div class="spottext">75 Hagiwara Tea Garden Dr. Pagoda, Drum Bridge, estanques koi y Tea House.</div>
     </details>
-    <a class="map" href="https://www.google.com/maps/dir/?api=1&destination=Japanese+Tea+Garden,+75+Hagiwara+Tea+Garden+Dr,+San+Francisco,+CA+94118&travelmode=driving" target="_blank" aria-label="Abrir Japanese Tea Garden en Google Maps" title="Japanese Tea Garden"><svg class="gmaps-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7z"/><circle cx="12" cy="9" r="2.7" fill="#fff"/></svg></a>
+    <div class="mapset">
+    <a class="map" href="https://www.google.com/maps/dir/?api=1&destination=Japanese+Tea+Garden%2C+75+Hagiwara+Tea+Garden+Dr%2C+San+Francisco%2C+CA+94118&travelmode=driving" target="_blank" aria-label="Ruta en Google Maps" title="Ruta en Google Maps"><svg class="gmaps-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7z"/><circle cx="12" cy="9" r="2.7" fill="#fff"/></svg></a>
+    <a class="navbtn" href="https://www.google.com/maps/dir/?api=1&destination=Japanese+Tea+Garden%2C+75+Hagiwara+Tea+Garden+Dr%2C+San+Francisco%2C+CA+94118&travelmode=driving&dir_action=navigate" target="_blank" aria-label="Navegar en Google Maps" title="Navegar en Google Maps">➤</a>
+  </div>
 
-    <details class="spot"><summary><input class="check subcheck" type="checkbox"><input class="check subcheck" type="checkbox">California Academy of Sciences · 60–75 min</summary>
+    <details class="spot"><summary><input class="check subcheck" type="checkbox">California Academy of Sciences · 60–75 min</summary>
       <div class="spottext">55 Music Concourse Dr. Prioridad: <b>Steinhart Aquarium</b>. Si sobra tiempo, rainforest o museo de historia natural.</div>
     </details>
-    <a class="map" href="https://www.google.com/maps/dir/?api=1&destination=California+Academy+of+Sciences,+55+Music+Concourse+Dr,+San+Francisco,+CA+94118&travelmode=walking" target="_blank" aria-label="Abrir California Academy of Sciences en Google Maps" title="California Academy of Sciences"><svg class="gmaps-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7z"/><circle cx="12" cy="9" r="2.7" fill="#fff"/></svg></a>
+    <div class="mapset">
+    <a class="map" href="https://www.google.com/maps/dir/?api=1&destination=California+Academy+of+Sciences%2C+55+Music+Concourse+Dr%2C+San+Francisco%2C+CA+94118&travelmode=walking" target="_blank" aria-label="Ruta en Google Maps" title="Ruta en Google Maps"><svg class="gmaps-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7z"/><circle cx="12" cy="9" r="2.7" fill="#fff"/></svg></a>
+    <a class="navbtn" href="https://www.google.com/maps/dir/?api=1&destination=California+Academy+of+Sciences%2C+55+Music+Concourse+Dr%2C+San+Francisco%2C+CA+94118&travelmode=walking&dir_action=navigate" target="_blank" aria-label="Navegar en Google Maps" title="Navegar en Google Maps">➤</a>
+  </div>
 
-    <details class="spot"><summary><input class="check subcheck" type="checkbox"><input class="check subcheck" type="checkbox">Bison Paddock · 15–20 min</summary>
+    <details class="spot"><summary><input class="check subcheck" type="checkbox">Bison Paddock · 15–20 min</summary>
       <div class="spottext">1237 John F. Kennedy Dr. Ver los bisontes y seguir hacia el extremo oeste del parque.</div>
     </details>
-    <a class="map" href="https://www.google.com/maps/dir/?api=1&destination=Bison+Paddock,+1237+John+F+Kennedy+Dr,+San+Francisco,+CA+94121&travelmode=driving" target="_blank" aria-label="Abrir Bison Paddock en Google Maps" title="Bison Paddock"><svg class="gmaps-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7z"/><circle cx="12" cy="9" r="2.7" fill="#fff"/></svg></a>
+    <div class="mapset">
+    <a class="map" href="https://www.google.com/maps/dir/?api=1&destination=Bison+Paddock%2C+1237+John+F+Kennedy+Dr%2C+San+Francisco%2C+CA+94121&travelmode=driving" target="_blank" aria-label="Ruta en Google Maps" title="Ruta en Google Maps"><svg class="gmaps-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7z"/><circle cx="12" cy="9" r="2.7" fill="#fff"/></svg></a>
+    <a class="navbtn" href="https://www.google.com/maps/dir/?api=1&destination=Bison+Paddock%2C+1237+John+F+Kennedy+Dr%2C+San+Francisco%2C+CA+94121&travelmode=driving&dir_action=navigate" target="_blank" aria-label="Navegar en Google Maps" title="Navegar en Google Maps">➤</a>
+  </div>
 
-    <a class="map" href="https://www.google.com/maps/dir/?api=1&destination=Bison+Paddock,+1237+John+F+Kennedy+Dr,+San+Francisco,+CA+94121&waypoints=Japanese+Tea+Garden,+75+Hagiwara+Tea+Garden+Dr,+San+Francisco,+CA+94118%7CCalifornia+Academy+of+Sciences,+55+Music+Concourse+Dr,+San+Francisco,+CA+94118&travelmode=driving" target="_blank" aria-label="Abrir recorrido Golden Gate Park en Google Maps" title="Recorrido Golden Gate Park"><svg class="gmaps-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7z"/><circle cx="12" cy="9" r="2.7" fill="#fff"/></svg></a>
+    <div class="mapset">
+    <a class="map" href="https://www.google.com/maps/dir/?api=1&destination=Bison+Paddock%2C+1237+John+F+Kennedy+Dr%2C+San+Francisco%2C+CA+94121&travelmode=driving" target="_blank" aria-label="Ruta en Google Maps" title="Ruta en Google Maps"><svg class="gmaps-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7z"/><circle cx="12" cy="9" r="2.7" fill="#fff"/></svg></a>
+    <a class="navbtn" href="https://www.google.com/maps/dir/?api=1&destination=Bison+Paddock%2C+1237+John+F+Kennedy+Dr%2C+San+Francisco%2C+CA+94121&travelmode=driving&dir_action=navigate" target="_blank" aria-label="Navegar en Google Maps" title="Navegar en Google Maps">➤</a>
+  </div>
   </div></div></div>
 
   <div class="card"><div class="row"><div class="time">18:00</div><div class="content">
     <div class="activity"><input class="check" type="checkbox">Lands End → Sutro Baths → Ocean Beach <span class="duration">~1h15–1h30</span></div>
     <div class="meta">Desde Bison Paddock hacia Lands End. Después caminar hacia Sutro Baths y Ocean Beach.</div>
-    <details class="spot"><summary><input class="check subcheck" type="checkbox"><input class="check subcheck" type="checkbox">Lands End</summary><div class="spottext"><b>Qué ver:</b> vistas del Golden Gate desde los acantilados y el sendero costero.</div></details>
-    <details class="spot"><summary><input class="check subcheck" type="checkbox"><input class="check subcheck" type="checkbox">Sutro Baths</summary><div class="spottext"><b>Qué ver:</b> ruinas de los antiguos baños, costa rocosa y Cave/Cliff House area.</div></details>
-    <details class="spot"><summary><input class="check subcheck" type="checkbox"><input class="check subcheck" type="checkbox">Ocean Beach</summary><div class="spottext"><b>Qué ver:</b> playa abierta sobre el Pacífico, ideal para cerrar el paseo y ver la luz de la tarde.</div></details>
+    <details class="spot"><summary><input class="check subcheck" type="checkbox">Lands End</summary><div class="spottext"><b>Qué ver:</b> vistas del Golden Gate desde los acantilados y el sendero costero.</div></details>
+    <div class="mapset">
+    <a class="map" href="https://www.google.com/maps/dir/?api=1&destination=Lands+End+Lookout%2C+San+Francisco%2C+CA&travelmode=walking" target="_blank" aria-label="Ruta en Google Maps" title="Ruta en Google Maps"><svg class="gmaps-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7z"/><circle cx="12" cy="9" r="2.7" fill="#fff"/></svg></a>
+    <a class="navbtn" href="https://www.google.com/maps/dir/?api=1&destination=Lands+End+Lookout%2C+San+Francisco%2C+CA&travelmode=walking&dir_action=navigate" target="_blank" aria-label="Navegar en Google Maps" title="Navegar en Google Maps">➤</a>
+  </div>
+    <details class="spot"><summary><input class="check subcheck" type="checkbox">Sutro Baths</summary><div class="spottext"><b>Qué ver:</b> ruinas de los antiguos baños, costa rocosa y Cave/Cliff House area.</div></details>
+    <div class="mapset">
+    <a class="map" href="https://www.google.com/maps/dir/?api=1&destination=Sutro+Baths%2C+San+Francisco%2C+CA&travelmode=walking" target="_blank" aria-label="Ruta en Google Maps" title="Ruta en Google Maps"><svg class="gmaps-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7z"/><circle cx="12" cy="9" r="2.7" fill="#fff"/></svg></a>
+    <a class="navbtn" href="https://www.google.com/maps/dir/?api=1&destination=Sutro+Baths%2C+San+Francisco%2C+CA&travelmode=walking&dir_action=navigate" target="_blank" aria-label="Navegar en Google Maps" title="Navegar en Google Maps">➤</a>
+  </div>
+    <details class="spot"><summary><input class="check subcheck" type="checkbox">Ocean Beach</summary><div class="spottext"><b>Qué ver:</b> playa abierta sobre el Pacífico, ideal para cerrar el paseo y ver la luz de la tarde.</div></details>
+    <div class="mapset">
+    <a class="map" href="https://www.google.com/maps/dir/?api=1&destination=Ocean+Beach%2C+San+Francisco%2C+CA&travelmode=walking" target="_blank" aria-label="Ruta en Google Maps" title="Ruta en Google Maps"><svg class="gmaps-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7z"/><circle cx="12" cy="9" r="2.7" fill="#fff"/></svg></a>
+    <a class="navbtn" href="https://www.google.com/maps/dir/?api=1&destination=Ocean+Beach%2C+San+Francisco%2C+CA&travelmode=walking&dir_action=navigate" target="_blank" aria-label="Navegar en Google Maps" title="Navegar en Google Maps">➤</a>
+  </div>
     <span class="badge walk">Caminata</span>
-    <a class="map" href="https://www.google.com/maps/dir/?api=1&destination=Ocean+Beach,+San+Francisco,+CA&waypoints=Sutro+Baths,+San+Francisco,+CA&travelmode=walking" target="_blank" aria-label="Abrir en Google Maps" title="Abrir en Google Maps"><svg class="gmaps-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7z"/><circle cx="12" cy="9" r="2.7" fill="#fff"/></svg></a>
+    <div class="mapset">
+    <a class="map" href="https://www.google.com/maps/dir/?api=1&destination=Ocean+Beach%2C+San+Francisco%2C+CA&travelmode=driving" target="_blank" aria-label="Ruta en Google Maps" title="Ruta en Google Maps"><svg class="gmaps-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7z"/><circle cx="12" cy="9" r="2.7" fill="#fff"/></svg></a>
+    <a class="navbtn" href="https://www.google.com/maps/dir/?api=1&destination=Ocean+Beach%2C+San+Francisco%2C+CA&travelmode=driving&dir_action=navigate" target="_blank" aria-label="Navegar en Google Maps" title="Navegar en Google Maps">➤</a>
+  </div>
   </div></div></div>
 
   <div class="card"><div class="row"><div class="time">20:30</div><div class="content">
     <div class="activity"><input class="check" type="checkbox">Rooftop dinner <span class="duration">1h30–2h</span></div>
     <div class="meta">Reservas: Cavaña / Charmaine’s / Chotto Matte. Elegir 1 y cancelar las otras.</div>
-    <details class="spot"><summary><input class="check subcheck" type="checkbox"><input class="check subcheck" type="checkbox">Qué esperar</summary><div class="spottext"><b>Cavaña:</b> rooftop latino, más ambiente y vista. <b>Charmaine’s:</b> cocktails y fire pits. <b>Chotto Matte:</b> cena Nikkei + nightlife.</div></details>
+    <details class="spot"><summary><input class="check subcheck" type="checkbox">Qué esperar</summary><div class="spottext"><b>Cavaña:</b> rooftop latino, más ambiente y vista. <b>Charmaine’s:</b> cocktails y fire pits. <b>Chotto Matte:</b> cena Nikkei + nightlife.</div></details>
+  
+    <div class="mapset">
+    <a class="map" href="https://www.google.com/maps/dir/?api=1&destination=Cava%C3%B1a%2C+100+Channel+St%2C+San+Francisco%2C+CA&travelmode=driving" target="_blank" aria-label="Ruta en Google Maps" title="Ruta en Google Maps"><svg class="gmaps-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7z"/><circle cx="12" cy="9" r="2.7" fill="#fff"/></svg></a>
+    <a class="navbtn" href="https://www.google.com/maps/dir/?api=1&destination=Cava%C3%B1a%2C+100+Channel+St%2C+San+Francisco%2C+CA&travelmode=driving&dir_action=navigate" target="_blank" aria-label="Navegar en Google Maps" title="Navegar en Google Maps">➤</a>
+  </div>
   </div></div></div>
 </section>
 
@@ -173,44 +221,82 @@
   <div class="card"><div class="row"><div class="time">08:30</div><div class="content">
     <div class="activity"><input class="check" type="checkbox">Desayuno + check-out + dejar valijas <span class="duration">30 min</span></div>
     <div class="meta">Las valijas quedan en Holiday Inn.</div>
-    <details class="spot"><summary><input class="check subcheck" type="checkbox"><input class="check subcheck" type="checkbox">Objetivo</summary><div class="spottext"><b>Objetivo:</b> salir livianos para caminar y dejar todo listo para recoger rápido después del auto.</div></details>
+    <details class="spot"><summary><input class="check subcheck" type="checkbox">Objetivo</summary><div class="spottext"><b>Objetivo:</b> salir livianos para caminar y dejar todo listo para recoger rápido después del auto.</div></details>
+  
+    <div class="mapset">
+    <a class="map" href="https://www.google.com/maps/dir/?api=1&destination=Holiday+Inn+San+Francisco+Golden+Gateway%2C+1500+Van+Ness+Ave%2C+San+Francisco%2C+CA&travelmode=walking" target="_blank" aria-label="Ruta en Google Maps" title="Ruta en Google Maps"><svg class="gmaps-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7z"/><circle cx="12" cy="9" r="2.7" fill="#fff"/></svg></a>
+    <a class="navbtn" href="https://www.google.com/maps/dir/?api=1&destination=Holiday+Inn+San+Francisco+Golden+Gateway%2C+1500+Van+Ness+Ave%2C+San+Francisco%2C+CA&travelmode=walking&dir_action=navigate" target="_blank" aria-label="Navegar en Google Maps" title="Navegar en Google Maps">➤</a>
+  </div>
   </div></div></div>
 
   <div class="card"><div class="row"><div class="time">09:15</div><div class="content">
     <div class="activity"><input class="check" type="checkbox">Lombard → North Beach → Chinatown → Union Square <span class="duration">~5h</span></div>
     <div class="meta">Recorrido urbano + almuerzo. Después, compras en Market St.</div>
-    <details class="spot"><summary><input class="check subcheck" type="checkbox"><input class="check subcheck" type="checkbox">Lombard Street</summary><div class="spottext"><b>Qué ver:</b> la cuadra zigzagueante, jardines y vista hacia Coit Tower/Telegraph Hill. <b>Detalle urbano:</b> mirar cómo la calle fue diseñada con curvas cerradas para reducir la pendiente; las casas y jardines de Russian Hill completan la escena.</div></details>
-    <details class="spot"><summary><input class="check subcheck" type="checkbox"><input class="check subcheck" type="checkbox">North Beach</summary><div class="spottext"><b>Qué ver:</b> ambiente italiano, Washington Square y Columbus Ave. <b>Arquitectura/historia:</b> mirar la iglesia Saints Peter and Paul frente a la plaza y, si quedan a mano, los edificios de ladrillo y fachadas históricas alrededor de Columbus.</div></details>
-    <details class="spot"><summary><input class="check subcheck" type="checkbox"><input class="check subcheck" type="checkbox">Chinatown</summary><div class="spottext"><b>Qué ver:</b> Dragon Gate, Grant Ave y alguna calle lateral con mercados y tiendas. <b>Edificios/monumentos:</b> sumar Old St. Mary’s Cathedral si pasan cerca y mirar los balcones, faroles y fachadas tradicionales del barrio; Portsmouth Square también tiene valor histórico como uno de los espacios públicos más antiguos de la ciudad.</div></details>
-    <details class="spot"><summary><input class="check subcheck" type="checkbox"><input class="check subcheck" type="checkbox">Union Square</summary><div class="spottext">Plaza, Dewey Monument y fachadas históricas del entorno.</div></details>
+    <details class="spot"><summary><input class="check subcheck" type="checkbox">Lombard Street</summary><div class="spottext"><b>Qué ver:</b> la cuadra zigzagueante, jardines y vista hacia Coit Tower/Telegraph Hill. <b>Detalle urbano:</b> mirar cómo la calle fue diseñada con curvas cerradas para reducir la pendiente; las casas y jardines de Russian Hill completan la escena.</div></details>
+    <div class="mapset">
+    <a class="map" href="https://www.google.com/maps/dir/?api=1&destination=Lombard+Street%2C+San+Francisco%2C+CA&travelmode=walking" target="_blank" aria-label="Ruta en Google Maps" title="Ruta en Google Maps"><svg class="gmaps-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7z"/><circle cx="12" cy="9" r="2.7" fill="#fff"/></svg></a>
+    <a class="navbtn" href="https://www.google.com/maps/dir/?api=1&destination=Lombard+Street%2C+San+Francisco%2C+CA&travelmode=walking&dir_action=navigate" target="_blank" aria-label="Navegar en Google Maps" title="Navegar en Google Maps">➤</a>
+  </div>
+    <details class="spot"><summary><input class="check subcheck" type="checkbox">North Beach</summary><div class="spottext"><b>Qué ver:</b> ambiente italiano, Washington Square y Columbus Ave. <b>Arquitectura/historia:</b> mirar la iglesia Saints Peter and Paul frente a la plaza y, si quedan a mano, los edificios de ladrillo y fachadas históricas alrededor de Columbus.</div></details>
+    <div class="mapset">
+    <a class="map" href="https://www.google.com/maps/dir/?api=1&destination=Washington+Square%2C+San+Francisco%2C+CA&travelmode=walking" target="_blank" aria-label="Ruta en Google Maps" title="Ruta en Google Maps"><svg class="gmaps-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7z"/><circle cx="12" cy="9" r="2.7" fill="#fff"/></svg></a>
+    <a class="navbtn" href="https://www.google.com/maps/dir/?api=1&destination=Washington+Square%2C+San+Francisco%2C+CA&travelmode=walking&dir_action=navigate" target="_blank" aria-label="Navegar en Google Maps" title="Navegar en Google Maps">➤</a>
+  </div>
+    <details class="spot"><summary><input class="check subcheck" type="checkbox">Chinatown</summary><div class="spottext"><b>Qué ver:</b> Dragon Gate, Grant Ave y alguna calle lateral con mercados y tiendas. <b>Edificios/monumentos:</b> sumar Old St. Mary’s Cathedral si pasan cerca y mirar los balcones, faroles y fachadas tradicionales del barrio; Portsmouth Square también tiene valor histórico como uno de los espacios públicos más antiguos de la ciudad.</div></details>
+    <div class="mapset">
+    <a class="map" href="https://www.google.com/maps/dir/?api=1&destination=Dragon+Gate%2C+San+Francisco%2C+CA&travelmode=walking" target="_blank" aria-label="Ruta en Google Maps" title="Ruta en Google Maps"><svg class="gmaps-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7z"/><circle cx="12" cy="9" r="2.7" fill="#fff"/></svg></a>
+    <a class="navbtn" href="https://www.google.com/maps/dir/?api=1&destination=Dragon+Gate%2C+San+Francisco%2C+CA&travelmode=walking&dir_action=navigate" target="_blank" aria-label="Navegar en Google Maps" title="Navegar en Google Maps">➤</a>
+  </div>
+    <details class="spot"><summary><input class="check subcheck" type="checkbox">Union Square</summary><div class="spottext">Plaza, Dewey Monument y fachadas históricas del entorno.</div></details>
+    <div class="mapset">
+    <a class="map" href="https://www.google.com/maps/dir/?api=1&destination=Union+Square%2C+San+Francisco%2C+CA&travelmode=walking" target="_blank" aria-label="Ruta en Google Maps" title="Ruta en Google Maps"><svg class="gmaps-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7z"/><circle cx="12" cy="9" r="2.7" fill="#fff"/></svg></a>
+    <a class="navbtn" href="https://www.google.com/maps/dir/?api=1&destination=Union+Square%2C+San+Francisco%2C+CA&travelmode=walking&dir_action=navigate" target="_blank" aria-label="Navegar en Google Maps" title="Navegar en Google Maps">➤</a>
+  </div>
     <span class="badge walk">Caminando</span>
-    <a class="map" href="https://www.google.com/maps/dir/?api=1&destination=233+Ellis+St,+San+Francisco,+CA&waypoints=Lombard+Street,+San+Francisco,+CA%7CNorth+Beach,+San+Francisco,+CA%7CChinatown,+San+Francisco,+CA%7CUnion+Square,+San+Francisco,+CA&travelmode=walking" target="_blank" aria-label="Abrir recorrido en Google Maps" title="Abrir recorrido en Google Maps"><svg class="gmaps-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7z"/><circle cx="12" cy="9" r="2.7" fill="#fff"/></svg></a>
+    <div class="mapset">
+    <a class="map" href="https://www.google.com/maps/dir/?api=1&destination=233+Ellis+St%2C+San+Francisco%2C+CA&travelmode=driving" target="_blank" aria-label="Ruta en Google Maps" title="Ruta en Google Maps"><svg class="gmaps-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7z"/><circle cx="12" cy="9" r="2.7" fill="#fff"/></svg></a>
+    <a class="navbtn" href="https://www.google.com/maps/dir/?api=1&destination=233+Ellis+St%2C+San+Francisco%2C+CA&travelmode=driving&dir_action=navigate" target="_blank" aria-label="Navegar en Google Maps" title="Navegar en Google Maps">➤</a>
+  </div>
   </div></div></div>
 
   <div class="card"><div class="row"><div class="time">14:20</div><div class="content">
     <div class="activity"><input class="check" type="checkbox">Adidas · Shiekh <span class="duration">30–40 min</span></div>
     <div class="meta">929 Market St · tienda multimarca con Adidas, sobre el camino a UNIQLO.</div>
-    <a class="map" href="https://www.google.com/maps/dir/?api=1&destination=Shiekh,+929+Market+St,+San+Francisco,+CA+94103&travelmode=walking" target="_blank" aria-label="Abrir Shiekh en Google Maps" title="Abrir Shiekh en Google Maps"><svg class="gmaps-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7z"/><circle cx="12" cy="9" r="2.7" fill="#fff"/></svg></a>
+    <div class="mapset">
+    <a class="map" href="https://www.google.com/maps/dir/?api=1&destination=Shiekh%2C+929+Market+St%2C+San+Francisco%2C+CA+94103&travelmode=walking" target="_blank" aria-label="Ruta en Google Maps" title="Ruta en Google Maps"><svg class="gmaps-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7z"/><circle cx="12" cy="9" r="2.7" fill="#fff"/></svg></a>
+    <a class="navbtn" href="https://www.google.com/maps/dir/?api=1&destination=Shiekh%2C+929+Market+St%2C+San+Francisco%2C+CA+94103&travelmode=walking&dir_action=navigate" target="_blank" aria-label="Navegar en Google Maps" title="Navegar en Google Maps">➤</a>
+  </div>
   </div></div></div>
 
   <div class="card"><div class="row"><div class="time">15:00</div><div class="content">
     <div class="activity"><input class="check" type="checkbox">UNIQLO <span class="duration">1 h</span></div>
     <div class="meta">801 Market St · flagship nuevo.</div>
-    <a class="map" href="https://www.google.com/maps/dir/?api=1&destination=UNIQLO,+801+Market+St,+San+Francisco,+CA+94103&travelmode=walking" target="_blank" aria-label="Abrir UNIQLO en Google Maps" title="Abrir UNIQLO en Google Maps"><svg class="gmaps-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7z"/><circle cx="12" cy="9" r="2.7" fill="#fff"/></svg></a>
+    <div class="mapset">
+    <a class="map" href="https://www.google.com/maps/dir/?api=1&destination=UNIQLO%2C+801+Market+St%2C+San+Francisco%2C+CA+94103&travelmode=walking" target="_blank" aria-label="Ruta en Google Maps" title="Ruta en Google Maps"><svg class="gmaps-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7z"/><circle cx="12" cy="9" r="2.7" fill="#fff"/></svg></a>
+    <a class="navbtn" href="https://www.google.com/maps/dir/?api=1&destination=UNIQLO%2C+801+Market+St%2C+San+Francisco%2C+CA+94103&travelmode=walking&dir_action=navigate" target="_blank" aria-label="Navegar en Google Maps" title="Navegar en Google Maps">➤</a>
+  </div>
   </div></div></div>
 
   <div class="card"><div class="row"><div class="time">17:00</div><div class="content">
     <div class="activity"><input class="check" type="checkbox">Retiro del auto — Enterprise <span class="duration">20–30 min</span></div>
     <div class="meta">233 Ellis St. Si se consigue adelantar, mejor.</div>
-    <details class="spot"><summary><input class="check subcheck" type="checkbox"><input class="check subcheck" type="checkbox">Objetivo</summary><div class="spottext"><b>Objetivo:</b> retiro rápido, revisar combustible/daños y salir.</div></details>
+    <details class="spot"><summary><input class="check subcheck" type="checkbox">Objetivo</summary><div class="spottext"><b>Objetivo:</b> retiro rápido, revisar combustible/daños y salir.</div></details>
     <span class="badge drive">Auto</span>
+  
+    <div class="mapset">
+    <a class="map" href="https://www.google.com/maps/dir/?api=1&destination=Enterprise+Rent-A-Car%2C+233+Ellis+St%2C+San+Francisco%2C+CA&travelmode=walking" target="_blank" aria-label="Ruta en Google Maps" title="Ruta en Google Maps"><svg class="gmaps-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7z"/><circle cx="12" cy="9" r="2.7" fill="#fff"/></svg></a>
+    <a class="navbtn" href="https://www.google.com/maps/dir/?api=1&destination=Enterprise+Rent-A-Car%2C+233+Ellis+St%2C+San+Francisco%2C+CA&travelmode=walking&dir_action=navigate" target="_blank" aria-label="Navegar en Google Maps" title="Navegar en Google Maps">➤</a>
+  </div>
   </div></div></div>
 
   <div class="card"><div class="row"><div class="time">17:20</div><div class="content">
     <div class="activity"><input class="check" type="checkbox">Enterprise → Holiday Inn → cargar valijas → Yosemite <span class="duration">~3h30–4h</span></div>
     <div class="meta">Salida directa hacia Yosemite Westgate Lodge.</div>
-    <details class="spot"><summary><input class="check subcheck" type="checkbox"><input class="check subcheck" type="checkbox">Qué tener en cuenta</summary><div class="spottext"><b>Clave:</b> recoger valijas y salir sin paradas largas. El trayecto a Westgate es de varias horas y conviene cenar antes o llevar algo para el camino.</div></details>
-    <a class="map" href="https://www.google.com/maps/dir/?api=1&destination=Yosemite+Westgate+Lodge,+7633+Highway+120,+Groveland,+CA&waypoints=Holiday+Inn+San+Francisco+Golden+Gateway,+1500+Van+Ness+Ave,+San+Francisco,+CA&travelmode=driving" target="_blank" aria-label="Abrir en Google Maps" title="Abrir en Google Maps"><svg class="gmaps-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7z"/><circle cx="12" cy="9" r="2.7" fill="#fff"/></svg></a>
+    <details class="spot"><summary><input class="check subcheck" type="checkbox">Qué tener en cuenta</summary><div class="spottext"><b>Clave:</b> recoger valijas y salir sin paradas largas. El trayecto a Westgate es de varias horas y conviene cenar antes o llevar algo para el camino.</div></details>
+    <div class="mapset">
+    <a class="map" href="https://www.google.com/maps/dir/?api=1&destination=Yosemite+Westgate+Lodge%2C+7633+Highway+120%2C+Groveland%2C+CA&travelmode=driving" target="_blank" aria-label="Ruta en Google Maps" title="Ruta en Google Maps"><svg class="gmaps-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7z"/><circle cx="12" cy="9" r="2.7" fill="#fff"/></svg></a>
+    <a class="navbtn" href="https://www.google.com/maps/dir/?api=1&destination=Yosemite+Westgate+Lodge%2C+7633+Highway+120%2C+Groveland%2C+CA&travelmode=driving&dir_action=navigate" target="_blank" aria-label="Navegar en Google Maps" title="Navegar en Google Maps">➤</a>
+  </div>
   </div></div></div>
 </section>
 
@@ -223,63 +309,86 @@
 
     <div class="card"><div class="row"><div class="time">06:15</div><div class="content">
       <div class="activity"><input class="check" type="checkbox">Salida Westgate Lodge <span class="duration">~40–45 min manejo</span></div>
-      <details class="spot"><summary><input class="check subcheck" type="checkbox"><input class="check subcheck" type="checkbox">Objetivo</summary><div class="spottext"><b>Objetivo:</b> salir temprano para llegar a Tuolumne Grove antes de que haya más autos y mantener margen para el partido.</div></details>
+      <details class="spot"><summary><input class="check subcheck" type="checkbox">Objetivo</summary><div class="spottext"><b>Objetivo:</b> salir temprano para llegar a Tuolumne Grove antes de que haya más autos y mantener margen para el partido.</div></details>
     </div></div></div>
 
     <div class="card"><div class="row"><div class="time">07:00</div><div class="content">
       <div class="activity"><input class="check" type="checkbox">Tuolumne Grove <span class="duration">1h30–1h45</span></div>
       <div class="meta">1h30–1h45 · ~4 km · bosque de sequoias · subida al regreso.</div>
-      <details class="spot"><summary><input class="check subcheck" type="checkbox"><input class="check subcheck" type="checkbox">Qué hacemos</summary><div class="spottext"><b>Qué hacemos:</b> estacionamos en Tuolumne Grove Trailhead, bajamos por el Old Big Oak Flat Road hasta el sector de giant sequoias, caminamos entre los árboles principales y regresamos por la misma ruta. La ida es mayormente en bajada; guardar energía porque el regreso tiene unos 150 m de subida.</div></details>
-      <a class="parking" href="https://www.google.com/maps/dir/?api=1&destination=37.758253,-119.805599&travelmode=driving" target="_blank">P</a><div class="gps">Tuolumne Grove Trailhead & Parking · GPS 37.758253, -119.805599</div>
+      <details class="spot"><summary><input class="check subcheck" type="checkbox">Qué hacemos</summary><div class="spottext"><b>Qué hacemos:</b> estacionamos en Tuolumne Grove Trailhead, bajamos por el Old Big Oak Flat Road hasta el sector de giant sequoias, caminamos entre los árboles principales y regresamos por la misma ruta. La ida es mayormente en bajada; guardar energía porque el regreso tiene unos 150 m de subida.</div></details>
+      <div class="mapset">
+      <a class="parking" href="https://www.google.com/maps/dir/?api=1&destination=37.758253,-119.805599&travelmode=driving" target="_blank" aria-label="Parking en Google Maps" title="Parking en Google Maps">P</a>
+      <a class="navbtn" href="https://www.google.com/maps/dir/?api=1&destination=37.758253,-119.805599&travelmode=driving&dir_action=navigate" target="_blank" aria-label="Navegar al parking" title="Navegar al parking">➤</a>
+    </div><div class="gps">Tuolumne Grove Trailhead & Parking · GPS 37.758253, -119.805599</div>
       <span class="badge forest">Bosque</span><span class="badge walk">Caminata</span>
     </div></div></div>
 
     <div class="card"><div class="row"><div class="time">09:30</div><div class="content">
       <div class="activity"><input class="check" type="checkbox">Tunnel View <span class="duration">15–20 min</span></div>
       <div class="meta">15–20 min. Parking + mirador. Casi sin caminar.</div>
-      <details class="spot"><summary><input class="check subcheck" type="checkbox"><input class="check subcheck" type="checkbox">Qué hacemos</summary><div class="spottext"><b>Qué hacemos:</b> dejamos el auto en el parking del mirador, cruzamos al punto panorámico y hacemos fotos de la vista clásica del valle: El Capitan a la izquierda, Half Dome al fondo y Bridalveil Fall a la derecha. No hace falta caminar más.</div></details>
-      <a class="parking" href="https://www.google.com/maps/dir/?api=1&destination=37.71559,-119.67693&travelmode=driving" target="_blank">P</a><div class="gps">Tunnel View overlook parking · GPS 37.71559, -119.67693</div>
+      <details class="spot"><summary><input class="check subcheck" type="checkbox">Qué hacemos</summary><div class="spottext"><b>Qué hacemos:</b> dejamos el auto en el parking del mirador, cruzamos al punto panorámico y hacemos fotos de la vista clásica del valle: El Capitan a la izquierda, Half Dome al fondo y Bridalveil Fall a la derecha. No hace falta caminar más.</div></details>
+      <div class="mapset">
+      <a class="parking" href="https://www.google.com/maps/dir/?api=1&destination=37.71559,-119.67693&travelmode=driving" target="_blank" aria-label="Parking en Google Maps" title="Parking en Google Maps">P</a>
+      <a class="navbtn" href="https://www.google.com/maps/dir/?api=1&destination=37.71559,-119.67693&travelmode=driving&dir_action=navigate" target="_blank" aria-label="Navegar al parking" title="Navegar al parking">➤</a>
+    </div><div class="gps">Tunnel View overlook parking · GPS 37.71559, -119.67693</div>
     </div></div></div>
 
     <div class="card"><div class="row"><div class="time">10:00</div><div class="content">
       <div class="activity"><input class="check" type="checkbox">Cook’s Meadow / Yosemite Valley <span class="duration">45–60 min</span></div>
       <div class="meta">45–60 min · ~1–1.5 km · plano y abierto.</div>
-      <details class="spot"><summary><input class="check subcheck" type="checkbox"><input class="check subcheck" type="checkbox">Qué hacemos</summary><div class="spottext"><b>Qué hacemos:</b> estacionamos en Yosemite Village Parking y caminamos un tramo de Cook’s Meadow. Buscamos las vistas hacia Yosemite Falls, Half Dome y las paredes del valle, sin hacer el loop completo si vamos justos de tiempo. Es plano y fácil.</div></details>
-      <a class="parking" href="https://www.google.com/maps/dir/?api=1&destination=37.7444,-119.5849&travelmode=driving" target="_blank">P</a><div class="gps">Yosemite Village Day-Use Parking · GPS 37.7444, -119.5849</div>
+      <details class="spot"><summary><input class="check subcheck" type="checkbox">Qué hacemos</summary><div class="spottext"><b>Qué hacemos:</b> estacionamos en Yosemite Village Parking y caminamos un tramo de Cook’s Meadow. Buscamos las vistas hacia Yosemite Falls, Half Dome y las paredes del valle, sin hacer el loop completo si vamos justos de tiempo. Es plano y fácil.</div></details>
+      <div class="mapset">
+      <a class="parking" href="https://www.google.com/maps/dir/?api=1&destination=37.7444,-119.5849&travelmode=driving" target="_blank" aria-label="Parking en Google Maps" title="Parking en Google Maps">P</a>
+      <a class="navbtn" href="https://www.google.com/maps/dir/?api=1&destination=37.7444,-119.5849&travelmode=driving&dir_action=navigate" target="_blank" aria-label="Navegar al parking" title="Navegar al parking">➤</a>
+    </div><div class="gps">Yosemite Village Day-Use Parking · GPS 37.7444, -119.5849</div>
       <span class="badge walk">Caminata suave</span>
     </div></div></div>
 
     <div class="card"><div class="row"><div class="time">11:10</div><div class="content">
       <div class="activity"><input class="check" type="checkbox">El Capitan Meadow <span class="duration">15–20 min</span></div>
       <div class="meta">15–20 min · caminata mínima.</div>
-      <details class="spot"><summary><input class="check subcheck" type="checkbox"><input class="check subcheck" type="checkbox">Qué hacemos</summary><div class="spottext"><b>Qué hacemos:</b> paramos en el área de estacionamiento al costado izquierdo de Northside Drive, frente a El Capitan Meadow, caminamos unos metros al borde de El Capitan Meadow y miramos la pared de más de 900 m desde abajo. Si hay escaladores, usar zoom del celular para tratar de encontrarlos. No entrar fuera de los senderos marcados de la pradera.</div></details>
-      <a class="parking" href="https://www.google.com/maps/dir/?api=1&destination=37.724206,-119.636470&travelmode=driving" target="_blank">P</a><div class="gps">El Capitan Meadow roadside parking, Northside Dr · GPS 37.724206, -119.636470</div>
+      <details class="spot"><summary><input class="check subcheck" type="checkbox">Qué hacemos</summary><div class="spottext"><b>Qué hacemos:</b> paramos en el área de estacionamiento al costado izquierdo de Northside Drive, frente a El Capitan Meadow, caminamos unos metros al borde de El Capitan Meadow y miramos la pared de más de 900 m desde abajo. Si hay escaladores, usar zoom del celular para tratar de encontrarlos. No entrar fuera de los senderos marcados de la pradera.</div></details>
+      <div class="mapset">
+      <a class="parking" href="https://www.google.com/maps/dir/?api=1&destination=37.724206,-119.636470&travelmode=driving" target="_blank" aria-label="Parking en Google Maps" title="Parking en Google Maps">P</a>
+      <a class="navbtn" href="https://www.google.com/maps/dir/?api=1&destination=37.724206,-119.636470&travelmode=driving&dir_action=navigate" target="_blank" aria-label="Navegar al parking" title="Navegar al parking">➤</a>
+    </div><div class="gps">El Capitan Meadow roadside parking, Northside Dr · GPS 37.724206, -119.636470</div>
     </div></div></div>
 
     <div class="card"><div class="row"><div class="time">11:40</div><div class="content">
       <div class="activity"><input class="check" type="checkbox">Valley View <span class="duration">10–15 min</span></div>
       <div class="meta">10–15 min · prácticamente al lado del parking.</div>
-      <details class="spot"><summary><input class="check subcheck" type="checkbox"><input class="check subcheck" type="checkbox">Qué hacemos</summary><div class="spottext"><b>Qué hacemos:</b> última parada del valle. Estacionamos en el pequeño pullout de Valley View, bajamos prácticamente al lado del Merced River y hacemos la foto con El Capitan, Cathedral Rocks y Bridalveil Fall. El parking es extremadamente limitado y está en un pullout pavimentado sobre Northside Drive; el botón de abajo apunta al punto exacto. Si está lleno, seguimos y no perdemos tiempo.</div></details>
-      <a class="parking" href="https://www.google.com/maps/dir/?api=1&destination=37.71600,-119.66868&travelmode=driving" target="_blank">P</a><div class="gps">Valley View paved pullout, Northside Dr · GPS 37.71600, -119.66868</div>
+      <details class="spot"><summary><input class="check subcheck" type="checkbox">Qué hacemos</summary><div class="spottext"><b>Qué hacemos:</b> última parada del valle. Estacionamos en el pequeño pullout de Valley View, bajamos prácticamente al lado del Merced River y hacemos la foto con El Capitan, Cathedral Rocks y Bridalveil Fall. El parking es extremadamente limitado y está en un pullout pavimentado sobre Northside Drive; el botón de abajo apunta al punto exacto. Si está lleno, seguimos y no perdemos tiempo.</div></details>
+      <div class="mapset">
+      <a class="parking" href="https://www.google.com/maps/dir/?api=1&destination=37.71600,-119.66868&travelmode=driving" target="_blank" aria-label="Parking en Google Maps" title="Parking en Google Maps">P</a>
+      <a class="navbtn" href="https://www.google.com/maps/dir/?api=1&destination=37.71600,-119.66868&travelmode=driving&dir_action=navigate" target="_blank" aria-label="Navegar al parking" title="Navegar al parking">➤</a>
+    </div><div class="gps">Valley View paved pullout, Northside Dr · GPS 37.71600, -119.66868</div>
     </div></div></div>
 
     <div class="card"><div class="row"><div class="time">12:00</div><div class="content">
       <div class="activity"><input class="check" type="checkbox">Margen flexible <span class="duration">0–60 min</span></div>
       <div class="meta">Hasta 1 hora para sumar algo si vienen adelantados.</div>
-      <details class="spot"><summary><input class="check subcheck" type="checkbox"><input class="check subcheck" type="checkbox">Qué podríamos sumar</summary><div class="spottext"><b>Opciones:</b> una parada corta adicional en el valle, extender Cook’s Meadow o almorzar algo rápido.</div></details>
+      <details class="spot"><summary><input class="check subcheck" type="checkbox">Qué podríamos sumar</summary><div class="spottext"><b>Opciones:</b> una parada corta adicional en el valle, extender Cook’s Meadow o almorzar algo rápido.</div></details>
     </div></div></div>
 
     <div class="card"><div class="row"><div class="time">13:00</div><div class="content">
       <div class="activity"><input class="check" type="checkbox">Salida ideal máxima hacia San Francisco <span class="duration">~4h30–5h</span></div>
       <div class="meta">Objetivo: llegar con margen al Chase Center.</div>
-      <details class="spot"><summary><input class="check subcheck" type="checkbox"><input class="check subcheck" type="checkbox">Objetivo / margen recomendado</summary><div class="spottext"><b>Clave:</b> salir idealmente no más tarde de 13:00. Dejar colchón para tráfico, estacionamiento y entrada al estadio. <b>Margen deseado:</b> llegar a SF 1h30–2h antes del partido.</div></details>
-      <a class="map" href="https://www.google.com/maps/dir/?api=1&destination=Chase+Center,+San+Francisco,+CA&waypoints=37.758253,-119.805599%7C37.71559,-119.67693%7C37.7444,-119.5849%7C37.724206,-119.636470%7C37.71600,-119.66868&travelmode=driving" target="_blank" aria-label="Abrir en Google Maps" title="Abrir en Google Maps"><svg class="gmaps-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7z"/><circle cx="12" cy="9" r="2.7" fill="#fff"/></svg></a>
+      <details class="spot"><summary><input class="check subcheck" type="checkbox">Objetivo / margen recomendado</summary><div class="spottext"><b>Clave:</b> salir idealmente no más tarde de 13:00. Dejar colchón para tráfico, estacionamiento y entrada al estadio. <b>Margen deseado:</b> llegar a SF 1h30–2h antes del partido.</div></details>
+      <div class="mapset">
+    <a class="map" href="https://www.google.com/maps/dir/?api=1&destination=Chase+Center%2C+San+Francisco%2C+CA&travelmode=driving" target="_blank" aria-label="Ruta en Google Maps" title="Ruta en Google Maps"><svg class="gmaps-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7z"/><circle cx="12" cy="9" r="2.7" fill="#fff"/></svg></a>
+    <a class="navbtn" href="https://www.google.com/maps/dir/?api=1&destination=Chase+Center%2C+San+Francisco%2C+CA&travelmode=driving&dir_action=navigate" target="_blank" aria-label="Navegar en Google Maps" title="Navegar en Google Maps">➤</a>
+  </div>
     </div></div></div>
 
     <div class="card"><div class="row"><div class="time">19:00</div><div class="content">
       <div class="activity"><input class="check" type="checkbox">Warriors <span class="duration">~3h</span></div>
-      <details class="spot"><summary><input class="check subcheck" type="checkbox"><input class="check subcheck" type="checkbox">Qué hacer</summary><div class="spottext"><b>Idea:</b> llegar con tiempo para entrar, recorrer el Chase Center y ver el calentamiento.</div></details>
-    </div></div></div>
+      <details class="spot"><summary><input class="check subcheck" type="checkbox">Qué hacer</summary><div class="spottext"><b>Idea:</b> llegar con tiempo para entrar, recorrer el Chase Center y ver el calentamiento.</div></details>
+    
+    <div class="mapset">
+    <a class="map" href="https://www.google.com/maps/dir/?api=1&destination=Chase+Center%2C+San+Francisco%2C+CA&travelmode=driving" target="_blank" aria-label="Ruta en Google Maps" title="Ruta en Google Maps"><svg class="gmaps-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7z"/><circle cx="12" cy="9" r="2.7" fill="#fff"/></svg></a>
+    <a class="navbtn" href="https://www.google.com/maps/dir/?api=1&destination=Chase+Center%2C+San+Francisco%2C+CA&travelmode=driving&dir_action=navigate" target="_blank" aria-label="Navegar en Google Maps" title="Navegar en Google Maps">➤</a>
+  </div>
+  </div></div></div>
   </details>
 
   <details>
@@ -288,39 +397,63 @@
 
     <div class="card"><div class="row"><div class="time">07:00</div><div class="content">
       <div class="activity"><input class="check" type="checkbox">Tuolumne Grove <span class="duration">1h30–1h45</span></div><div class="meta">1h30–1h45 · bosque de sequoias.</div>
-      <details class="spot"><summary><input class="check subcheck" type="checkbox"><input class="check subcheck" type="checkbox">Qué hacemos</summary><div class="spottext"><b>Qué hacemos:</b> mismo recorrido de la alternativa 1, pero sin apurarnos: bajamos hasta el grove, recorremos el sector de sequoias gigantes y volvemos por la subida.</div></details>
-      <a class="parking" href="https://www.google.com/maps/dir/?api=1&destination=37.758253,-119.805599&travelmode=driving" target="_blank">P</a><div class="gps">Tuolumne Grove Trailhead & Parking · GPS 37.758253, -119.805599</div>
+      <details class="spot"><summary><input class="check subcheck" type="checkbox">Qué hacemos</summary><div class="spottext"><b>Qué hacemos:</b> mismo recorrido de la alternativa 1, pero sin apurarnos: bajamos hasta el grove, recorremos el sector de sequoias gigantes y volvemos por la subida.</div></details>
+      <div class="mapset">
+      <a class="parking" href="https://www.google.com/maps/dir/?api=1&destination=37.758253,-119.805599&travelmode=driving" target="_blank" aria-label="Parking en Google Maps" title="Parking en Google Maps">P</a>
+      <a class="navbtn" href="https://www.google.com/maps/dir/?api=1&destination=37.758253,-119.805599&travelmode=driving&dir_action=navigate" target="_blank" aria-label="Navegar al parking" title="Navegar al parking">➤</a>
+    </div><div class="gps">Tuolumne Grove Trailhead & Parking · GPS 37.758253, -119.805599</div>
     </div></div></div>
     <div class="card"><div class="row"><div class="time">09:30</div><div class="content">
       <div class="activity"><input class="check" type="checkbox">Tunnel View <span class="duration">20–30 min</span></div><div class="meta">20–30 min.</div>
-      <details class="spot"><summary><input class="check subcheck" type="checkbox"><input class="check subcheck" type="checkbox">Qué hacemos</summary><div class="spottext"><b>Qué hacemos:</b> paramos en el mirador y hacemos la panorámica clásica completa del valle. Con más tiempo podemos movernos entre ambos lados del estacionamiento para buscar distintos ángulos.</div></details>
-      <a class="parking" href="https://www.google.com/maps/dir/?api=1&destination=37.71559,-119.67693&travelmode=driving" target="_blank">P</a><div class="gps">Tunnel View overlook parking · GPS 37.71559, -119.67693</div>
+      <details class="spot"><summary><input class="check subcheck" type="checkbox">Qué hacemos</summary><div class="spottext"><b>Qué hacemos:</b> paramos en el mirador y hacemos la panorámica clásica completa del valle. Con más tiempo podemos movernos entre ambos lados del estacionamiento para buscar distintos ángulos.</div></details>
+      <div class="mapset">
+      <a class="parking" href="https://www.google.com/maps/dir/?api=1&destination=37.71559,-119.67693&travelmode=driving" target="_blank" aria-label="Parking en Google Maps" title="Parking en Google Maps">P</a>
+      <a class="navbtn" href="https://www.google.com/maps/dir/?api=1&destination=37.71559,-119.67693&travelmode=driving&dir_action=navigate" target="_blank" aria-label="Navegar al parking" title="Navegar al parking">➤</a>
+    </div><div class="gps">Tunnel View overlook parking · GPS 37.71559, -119.67693</div>
     </div></div></div>
     <div class="card"><div class="row"><div class="time">10:15</div><div class="content">
       <div class="activity"><input class="check" type="checkbox">➕ NUEVO · Bridalveil Fall <span class="duration">30–40 min</span></div><div class="meta">30–40 min · ~0.8 km ida/vuelta.</div>
-      <details class="spot"><summary><input class="check subcheck" type="checkbox"><input class="check subcheck" type="checkbox">Qué hacemos</summary><div class="spottext"><b>NUEVO en Alt. 2.</b> Estacionamos en Bridalveil Fall Trailhead y hacemos el sendero pavimentado hasta la base de la cascada. Son ~0.8 km ida/vuelta con pendiente suave. En octubre el caudal suele ser menor que en primavera, pero sigue siendo una parada muy característica de Yosemite.</div></details>
-      <a class="parking" href="https://www.google.com/maps/dir/?api=1&destination=37.716669,-119.651890&travelmode=driving" target="_blank">P</a><div class="gps">Bridalveil Fall main parking area · GPS 37.716669, -119.651890</div>
+      <details class="spot"><summary><input class="check subcheck" type="checkbox">Qué hacemos</summary><div class="spottext"><b>NUEVO en Alt. 2.</b> Estacionamos en Bridalveil Fall Trailhead y hacemos el sendero pavimentado hasta la base de la cascada. Son ~0.8 km ida/vuelta con pendiente suave. En octubre el caudal suele ser menor que en primavera, pero sigue siendo una parada muy característica de Yosemite.</div></details>
+      <div class="mapset">
+      <a class="parking" href="https://www.google.com/maps/dir/?api=1&destination=37.716669,-119.651890&travelmode=driving" target="_blank" aria-label="Parking en Google Maps" title="Parking en Google Maps">P</a>
+      <a class="navbtn" href="https://www.google.com/maps/dir/?api=1&destination=37.716669,-119.651890&travelmode=driving&dir_action=navigate" target="_blank" aria-label="Navegar al parking" title="Navegar al parking">➤</a>
+    </div><div class="gps">Bridalveil Fall main parking area · GPS 37.716669, -119.651890</div>
     </div></div></div>
     <div class="card"><div class="row"><div class="time">11:15</div><div class="content">
       <div class="activity"><input class="check" type="checkbox">➕ MÁS COMPLETO · Yosemite Valley / Cook’s Meadow + almuerzo <span class="duration">2–3 h</span></div><div class="meta">2–3 h.</div>
-      <details class="spot"><summary><input class="check subcheck" type="checkbox"><input class="check subcheck" type="checkbox">Qué hacemos</summary><div class="spottext"><b>MÁS TIEMPO que en Alt. 1.</b> Dejamos el auto en Yosemite Village Parking, caminamos Cook’s Meadow con más calma, pasamos por Yosemite Village/Welcome Center si interesa y almorzamos dentro del valle. <b>Historia/edificios:</b> si están abiertos y quedan de paso, mirar el Yosemite Museum y las construcciones históricas del Village; el valor principal sigue siendo el paisaje.</div></details>
-      <a class="parking" href="https://www.google.com/maps/dir/?api=1&destination=37.7444,-119.5849&travelmode=driving" target="_blank">P</a><div class="gps">Yosemite Village Day-Use Parking · GPS 37.7444, -119.5849</div>
+      <details class="spot"><summary><input class="check subcheck" type="checkbox">Qué hacemos</summary><div class="spottext"><b>MÁS TIEMPO que en Alt. 1.</b> Dejamos el auto en Yosemite Village Parking, caminamos Cook’s Meadow con más calma, pasamos por Yosemite Village/Welcome Center si interesa y almorzamos dentro del valle. <b>Historia/edificios:</b> si están abiertos y quedan de paso, mirar el Yosemite Museum y las construcciones históricas del Village; el valor principal sigue siendo el paisaje.</div></details>
+      <div class="mapset">
+      <a class="parking" href="https://www.google.com/maps/dir/?api=1&destination=37.7444,-119.5849&travelmode=driving" target="_blank" aria-label="Parking en Google Maps" title="Parking en Google Maps">P</a>
+      <a class="navbtn" href="https://www.google.com/maps/dir/?api=1&destination=37.7444,-119.5849&travelmode=driving&dir_action=navigate" target="_blank" aria-label="Navegar al parking" title="Navegar al parking">➤</a>
+    </div><div class="gps">Yosemite Village Day-Use Parking · GPS 37.7444, -119.5849</div>
     </div></div></div>
     <div class="card"><div class="row"><div class="time">14:15</div><div class="content">
       <div class="activity"><input class="check" type="checkbox">El Capitan Meadow <span class="duration">20–30 min</span></div><div class="meta">20 min.</div>
-      <details class="spot"><summary><input class="check subcheck" type="checkbox"><input class="check subcheck" type="checkbox">Qué hacemos</summary><div class="spottext"><b>Qué hacemos:</b> nos acercamos al borde habilitado de la pradera para apreciar la escala real de El Capitan, buscar escaladores y mirar Cathedral Rocks hacia el lado opuesto.</div></details>
-      <a class="parking" href="https://www.google.com/maps/dir/?api=1&destination=37.724206,-119.636470&travelmode=driving" target="_blank">P</a><div class="gps">El Capitan Meadow roadside parking, Northside Dr · GPS 37.724206, -119.636470</div>
+      <details class="spot"><summary><input class="check subcheck" type="checkbox">Qué hacemos</summary><div class="spottext"><b>Qué hacemos:</b> nos acercamos al borde habilitado de la pradera para apreciar la escala real de El Capitan, buscar escaladores y mirar Cathedral Rocks hacia el lado opuesto.</div></details>
+      <div class="mapset">
+      <a class="parking" href="https://www.google.com/maps/dir/?api=1&destination=37.724206,-119.636470&travelmode=driving" target="_blank" aria-label="Parking en Google Maps" title="Parking en Google Maps">P</a>
+      <a class="navbtn" href="https://www.google.com/maps/dir/?api=1&destination=37.724206,-119.636470&travelmode=driving&dir_action=navigate" target="_blank" aria-label="Navegar al parking" title="Navegar al parking">➤</a>
+    </div><div class="gps">El Capitan Meadow roadside parking, Northside Dr · GPS 37.724206, -119.636470</div>
     </div></div></div>
     <div class="card"><div class="row"><div class="time">14:45</div><div class="content">
       <div class="activity"><input class="check" type="checkbox">Valley View <span class="duration">15–20 min</span></div><div class="meta">15–20 min.</div>
-      <details class="spot"><summary><input class="check subcheck" type="checkbox"><input class="check subcheck" type="checkbox">Qué hacemos</summary><div class="spottext"><b>Qué hacemos:</b> paramos en el pequeño pullout sobre Northside Drive para la foto clásica desde el Merced River. Es una de las mejores últimas vistas antes de salir del valle.</div></details>
-      <a class="parking" href="https://www.google.com/maps/dir/?api=1&destination=37.71600,-119.66868&travelmode=driving" target="_blank">P</a><div class="gps">Valley View paved pullout, Northside Dr · GPS 37.71600, -119.66868</div>
+      <details class="spot"><summary><input class="check subcheck" type="checkbox">Qué hacemos</summary><div class="spottext"><b>Qué hacemos:</b> paramos en el pequeño pullout sobre Northside Drive para la foto clásica desde el Merced River. Es una de las mejores últimas vistas antes de salir del valle.</div></details>
+      <div class="mapset">
+      <a class="parking" href="https://www.google.com/maps/dir/?api=1&destination=37.71600,-119.66868&travelmode=driving" target="_blank" aria-label="Parking en Google Maps" title="Parking en Google Maps">P</a>
+      <a class="navbtn" href="https://www.google.com/maps/dir/?api=1&destination=37.71600,-119.66868&travelmode=driving&dir_action=navigate" target="_blank" aria-label="Navegar al parking" title="Navegar al parking">➤</a>
+    </div><div class="gps">Valley View paved pullout, Northside Dr · GPS 37.71600, -119.66868</div>
     </div></div></div>
     <div class="card"><div class="row"><div class="time">16:00</div><div class="content">
       <div class="activity"><input class="check" type="checkbox">➕ NUEVO · Glacier Point <span class="duration">45–60 min + manejo</span></div><div class="meta">~2 h + manejo · sujeto a apertura/condiciones.</div>
-      <details class="spot"><summary><input class="check subcheck" type="checkbox"><input class="check subcheck" type="checkbox">Qué hacemos</summary><div class="spottext"><b>NUEVO en Alt. 2.</b> Subimos en auto hasta Glacier Point, estacionamos y caminamos pocos minutos hasta los miradores. Desde arriba vemos Half Dome de frente, Yosemite Valley muy abajo y la High Sierra. No requiere trekking largo; el valor está en la vista.</div></details>
-      <a class="parking" href="https://www.google.com/maps/dir/?api=1&destination=37.726956,-119.575298&travelmode=driving" target="_blank">P</a><div class="gps">Glacier Point Parking · GPS 37.726956, -119.575298</div>
-      <a class="map" href="https://www.google.com/maps/dir/?api=1&destination=37.726956,-119.575298&waypoints=37.758253,-119.805599%7C37.71559,-119.67693%7C37.716669,-119.651890%7C37.7444,-119.5849%7C37.724206,-119.636470%7C37.71600,-119.66868&travelmode=driving" target="_blank" aria-label="Abrir en Google Maps" title="Abrir en Google Maps"><svg class="gmaps-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7z"/><circle cx="12" cy="9" r="2.7" fill="#fff"/></svg></a>
+      <details class="spot"><summary><input class="check subcheck" type="checkbox">Qué hacemos</summary><div class="spottext"><b>NUEVO en Alt. 2.</b> Subimos en auto hasta Glacier Point, estacionamos y caminamos pocos minutos hasta los miradores. Desde arriba vemos Half Dome de frente, Yosemite Valley muy abajo y la High Sierra. No requiere trekking largo; el valor está en la vista.</div></details>
+      <div class="mapset">
+      <a class="parking" href="https://www.google.com/maps/dir/?api=1&destination=37.726956,-119.575298&travelmode=driving" target="_blank" aria-label="Parking en Google Maps" title="Parking en Google Maps">P</a>
+      <a class="navbtn" href="https://www.google.com/maps/dir/?api=1&destination=37.726956,-119.575298&travelmode=driving&dir_action=navigate" target="_blank" aria-label="Navegar al parking" title="Navegar al parking">➤</a>
+    </div><div class="gps">Glacier Point Parking · GPS 37.726956, -119.575298</div>
+      <div class="mapset">
+    <a class="map" href="https://www.google.com/maps/dir/?api=1&destination=37.726956%2C-119.575298&travelmode=driving" target="_blank" aria-label="Ruta en Google Maps" title="Ruta en Google Maps"><svg class="gmaps-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7z"/><circle cx="12" cy="9" r="2.7" fill="#fff"/></svg></a>
+    <a class="navbtn" href="https://www.google.com/maps/dir/?api=1&destination=37.726956%2C-119.575298&travelmode=driving&dir_action=navigate" target="_blank" aria-label="Navegar en Google Maps" title="Navegar en Google Maps">➤</a>
+  </div>
     </div></div></div>
   </details>
 </section>
@@ -328,19 +461,22 @@
 <section id="d17" class="day">
   <h2 class="section-title">Sábado 17 · Golden Gate + Marin + costa + SFO</h2>
 
-  <div class="card"><div class="row"><div class="time">~11:00</div><div class="content"><div class="activity"><input class="check" type="checkbox">Golden Gate Bridge <span class="duration">30–45 min</span></div><details class="spot"><summary><input class="check subcheck" type="checkbox"><input class="check subcheck" type="checkbox">Qué ver</summary><div class="spottext"><b>Qué ver:</b> vista desde el lado SF y, si no lo hicieron antes, caminar un tramo del puente.</div></details></div></div></div>
-  <div class="card"><div class="row"><div class="time">~11:45</div><div class="content"><div class="activity"><input class="check" type="checkbox">Battery Spencer / Marin Headlands <span class="duration">30–40 min</span></div><div class="meta">Gran vista del puente. Caminata corta.</div><details class="spot"><summary><input class="check subcheck" type="checkbox"><input class="check subcheck" type="checkbox">Qué ver</summary><div class="spottext"><b>Qué ver:</b> la postal del Golden Gate con San Francisco detrás. <b>Historia:</b> Battery Spencer forma parte de las antiguas defensas costeras de la bahía; además del mirador, miren las plataformas de artillería y restos de las instalaciones militares.</div></details></div></div></div>
-  <div class="card"><div class="row"><div class="time">12:30</div><div class="content"><div class="activity"><input class="check" type="checkbox">Sausalito + almuerzo <span class="duration">1h30–2h</span></div><div class="meta">12:30–14:30.</div><details class="spot"><summary><input class="check subcheck" type="checkbox"><input class="check subcheck" type="checkbox">Qué ver</summary><div class="spottext"><b>Qué ver:</b> waterfront, Bridgeway, casas en las laderas y vista de SF. <b>Detalle urbano:</b> fijarse en la arquitectura de las casas escalonadas sobre la ladera y en los edificios históricos del centro; si pasan por Vina del Mar Plaza, mirar su fuente y esculturas ornamentales.</div></details></div></div></div>
-  <div class="card"><div class="row"><div class="time">15:00</div><div class="content"><div class="activity"><input class="check" type="checkbox">Mount Tamalpais <span class="duration">60–90 min</span></div><div class="meta">Miradores + caminata corta. No trekking largo.</div><details class="spot"><summary><input class="check subcheck" type="checkbox"><input class="check subcheck" type="checkbox">Qué ver</summary><div class="spottext"><b>Qué ver:</b> panorámicas de Bay Area, costa y Marin desde miradores accesibles en auto.</div></details></div></div></div>
-  <div class="card"><div class="row"><div class="time">18:30</div><div class="content"><div class="activity"><input class="check" type="checkbox">Half Moon Bay <span class="duration">1h15–1h30</span></div><div class="meta">Main Street + costa + cena temprana.</div><details class="spot"><summary><input class="check subcheck" type="checkbox"><input class="check subcheck" type="checkbox">Qué ver</summary><div class="spottext"><b>Qué ver:</b> Main Street, ambiente de pueblo costero y algún tramo de playa/acantilado. <b>Arquitectura:</b> mirar los edificios históricos bajos de Main Street, antiguas fachadas comerciales y casas de fines del siglo XIX/principios del XX.</div></details></div></div></div>
+  <div class="card"><div class="row"><div class="time">~11:00</div><div class="content"><div class="activity"><input class="check" type="checkbox">Golden Gate Bridge <span class="duration">30–45 min</span></div><details class="spot"><summary><input class="check subcheck" type="checkbox">Qué ver</summary><div class="spottext"><b>Qué ver:</b> vista desde el lado SF y, si no lo hicieron antes, caminar un tramo del puente.</div></details></div></div></div>
+  <div class="card"><div class="row"><div class="time">~11:45</div><div class="content"><div class="activity"><input class="check" type="checkbox">Battery Spencer / Marin Headlands <span class="duration">30–40 min</span></div><div class="meta">Gran vista del puente. Caminata corta.</div><details class="spot"><summary><input class="check subcheck" type="checkbox">Qué ver</summary><div class="spottext"><b>Qué ver:</b> la postal del Golden Gate con San Francisco detrás. <b>Historia:</b> Battery Spencer forma parte de las antiguas defensas costeras de la bahía; además del mirador, miren las plataformas de artillería y restos de las instalaciones militares.</div></details></div></div></div>
+  <div class="card"><div class="row"><div class="time">12:30</div><div class="content"><div class="activity"><input class="check" type="checkbox">Sausalito + almuerzo <span class="duration">1h30–2h</span></div><div class="meta">12:30–14:30.</div><details class="spot"><summary><input class="check subcheck" type="checkbox">Qué ver</summary><div class="spottext"><b>Qué ver:</b> waterfront, Bridgeway, casas en las laderas y vista de SF. <b>Detalle urbano:</b> fijarse en la arquitectura de las casas escalonadas sobre la ladera y en los edificios históricos del centro; si pasan por Vina del Mar Plaza, mirar su fuente y esculturas ornamentales.</div></details></div></div></div>
+  <div class="card"><div class="row"><div class="time">15:00</div><div class="content"><div class="activity"><input class="check" type="checkbox">Mount Tamalpais <span class="duration">60–90 min</span></div><div class="meta">Miradores + caminata corta. No trekking largo.</div><details class="spot"><summary><input class="check subcheck" type="checkbox">Qué ver</summary><div class="spottext"><b>Qué ver:</b> panorámicas de Bay Area, costa y Marin desde miradores accesibles en auto.</div></details></div></div></div>
+  <div class="card"><div class="row"><div class="time">18:30</div><div class="content"><div class="activity"><input class="check" type="checkbox">Half Moon Bay <span class="duration">1h15–1h30</span></div><div class="meta">Main Street + costa + cena temprana.</div><details class="spot"><summary><input class="check subcheck" type="checkbox">Qué ver</summary><div class="spottext"><b>Qué ver:</b> Main Street, ambiente de pueblo costero y algún tramo de playa/acantilado. <b>Arquitectura:</b> mirar los edificios históricos bajos de Main Street, antiguas fachadas comerciales y casas de fines del siglo XIX/principios del XX.</div></details></div></div></div>
   <div class="card"><div class="row"><div class="time">20:15</div><div class="content">
     <div class="activity"><input class="check" type="checkbox">Salida hacia SFO <span class="duration">45–60 min</span></div>
     <div class="meta">Rental Car Center ~21:00–21:15. Devolución 22:00.</div>
-    <details class="spot"><summary><input class="check subcheck" type="checkbox"><input class="check subcheck" type="checkbox">Objetivo</summary><div class="spottext"><b>Objetivo:</b> cargar combustible si corresponde, devolver el auto y tomar AirTrain hacia la terminal.</div></details>
-    <a class="map" href="https://www.google.com/maps/dir/?api=1&destination=San+Francisco+International+Airport,+San+Francisco,+CA&waypoints=Battery+Spencer,+Sausalito,+CA%7CSausalito,+CA%7CMount+Tamalpais+State+Park,+Mill+Valley,+CA%7CHalf+Moon+Bay,+CA&travelmode=driving" target="_blank" aria-label="Abrir en Google Maps" title="Abrir en Google Maps"><svg class="gmaps-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7z"/><circle cx="12" cy="9" r="2.7" fill="#fff"/></svg></a>
+    <details class="spot"><summary><input class="check subcheck" type="checkbox">Objetivo</summary><div class="spottext"><b>Objetivo:</b> cargar combustible si corresponde, devolver el auto y tomar AirTrain hacia la terminal.</div></details>
+    <div class="mapset">
+    <a class="map" href="https://www.google.com/maps/dir/?api=1&destination=San+Francisco+International+Airport%2C+San+Francisco%2C+CA&travelmode=driving" target="_blank" aria-label="Ruta en Google Maps" title="Ruta en Google Maps"><svg class="gmaps-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7z"/><circle cx="12" cy="9" r="2.7" fill="#fff"/></svg></a>
+    <a class="navbtn" href="https://www.google.com/maps/dir/?api=1&destination=San+Francisco+International+Airport%2C+San+Francisco%2C+CA&travelmode=driving&dir_action=navigate" target="_blank" aria-label="Navegar en Google Maps" title="Navegar en Google Maps">➤</a>
+  </div>
   </div></div></div>
 
-  <div class="card"><div class="row"><div class="time">01:00</div><div class="content"><div class="activity"><input class="check" type="checkbox">Vuelo · domingo 18 <span class="duration">check-in 3 h antes</span></div><details class="spot"><summary><input class="check subcheck" type="checkbox"><input class="check subcheck" type="checkbox">Objetivo / margen recomendado</summary><div class="spottext"><b>Objetivo:</b> estar en la terminal con margen suficiente para equipaje, seguridad y embarque internacional.</div></details></div></div></div>
+  <div class="card"><div class="row"><div class="time">01:00</div><div class="content"><div class="activity"><input class="check" type="checkbox">Vuelo · domingo 18 <span class="duration">check-in 3 h antes</span></div><details class="spot"><summary><input class="check subcheck" type="checkbox">Objetivo / margen recomendado</summary><div class="spottext"><b>Objetivo:</b> estar en la terminal con margen suficiente para equipaje, seguridad y embarque internacional.</div></details></div></div></div>
 </section>
 
 <div class="footer">Las casillas quedan guardadas en este dispositivo/navegador.</div>
