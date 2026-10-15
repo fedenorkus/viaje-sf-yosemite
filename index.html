@@ -307,7 +307,7 @@
   <div class="card"><div class="row"><div class="time">01:00</div><div class="content"><div class="activity"><input class="check" type="checkbox">Vuelo · domingo 18 <span class="duration">check-in 3 h antes</span></div><details class="spot"><summary><input class="check subcheck" type="checkbox">Objetivo / margen recomendado</summary><div class="spottext"><b>Objetivo:</b> estar en la terminal con margen suficiente para equipaje, seguridad y embarque internacional.</div></details></div></div></div>
 </section>
 
-<div class="footer">Las casillas quedan guardadas en este dispositivo/navegador.</div>
+<div class="footer">Casillas reiniciadas desde el jueves 15. Los tildes nuevos quedan guardados en este dispositivo/navegador.</div>
 </div>
 
 <script>
@@ -319,7 +319,7 @@ function showDay(id,btn){
 }
 const boxes=[...document.querySelectorAll('input[type=checkbox]')];
 boxes.forEach((b,i)=>{
-  const k='tripcheck_'+i;
+  const k='tripcheck_reset_2026_10_15_'+i;
   const target=b.classList.contains('subcheck') ? b.closest('.spot') : b.closest('.card');
 
   b.addEventListener('click',e=>e.stopPropagation());
